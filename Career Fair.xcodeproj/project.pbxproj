@@ -15,8 +15,7 @@
 		526C081E21394CB00081A637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C081D21394CB00081A637 /* Extensions.swift */; };
 		526C082021395DD80081A637 /* О Ярмарке Вакансий.png in Resources */ = {isa = PBXBuildFile; fileRef = 526C081F21395DD70081A637 /* О Ярмарке Вакансий.png */; };
 		526C082221395F490081A637 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 526C082121395F490081A637 /* Arrow.png */; };
-		526C0828213D30670081A637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C0827213D30670081A637 /* Main.storyboard */; };
-		526C082A213D31280081A637 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C0829213D31280081A637 /* MenuViewController.swift */; };
+		8497E918213E9645002925E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497E917213E9645002925E4 /* Main.storyboard */; };
 		891443105578A84B90343DC7 /* Pods_Career_Fair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5E342D7D4307CEA78C82D /* Pods_Career_Fair.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +32,7 @@
 		526C081D21394CB00081A637 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		526C081F21395DD70081A637 /* О Ярмарке Вакансий.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "О Ярмарке Вакансий.png"; sourceTree = "<group>"; };
 		526C082121395F490081A637 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
-		526C0827213D30670081A637 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
-		526C0829213D31280081A637 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8497E917213E9645002925E4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F340DE6682C7BDC7B08C5A19 /* Pods-Career Fair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Fair.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Career Fair/Pods-Career Fair.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,9 +80,8 @@
 			children = (
 				526C0807213933620081A637 /* AppDelegate.swift */,
 				526C0809213933640081A637 /* ViewController.swift */,
-				526C0829213D31280081A637 /* MenuViewController.swift */,
 				526C081D21394CB00081A637 /* Extensions.swift */,
-				526C0827213D30670081A637 /* Main.storyboard */,
+				8497E917213E9645002925E4 /* Main.storyboard */,
 				526C080E2139336C0081A637 /* Assets.xcassets */,
 				526C081F21395DD70081A637 /* О Ярмарке Вакансий.png */,
 				526C081B213938C20081A637 /* Logo.png */,
@@ -132,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Islam & Co.";
 				TargetAttributes = {
 					526C08032139335D0081A637 = {
@@ -164,10 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526C0828213D30670081A637 /* Main.storyboard in Resources */,
 				526C081C213938C20081A637 /* Logo.png in Resources */,
 				526C08122139336D0081A637 /* LaunchScreen.storyboard in Resources */,
 				526C082021395DD80081A637 /* О Ярмарке Вакансий.png in Resources */,
+				8497E918213E9645002925E4 /* Main.storyboard in Resources */,
 				526C080F2139336C0081A637 /* Assets.xcassets in Resources */,
 				526C082221395F490081A637 /* Arrow.png in Resources */,
 			);
@@ -224,7 +221,6 @@
 				526C080A213933640081A637 /* ViewController.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
-				526C082A213D31280081A637 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +252,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -263,6 +260,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -313,6 +311,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -320,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
