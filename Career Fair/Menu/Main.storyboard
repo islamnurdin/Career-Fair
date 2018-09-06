@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1E1-CQ-2T2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CmZ-pq-C23">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,6 +15,9 @@
         </array>
         <array key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -102,11 +105,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-yE-NQX" customClass="CustomView" customModule="Career_Fair" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="16" width="347" height="96"/>
+                                                    <rect key="frame" x="-10" y="16" width="347" height="96"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-RZ-Gnm">
-                                                            <rect key="frame" x="165.5" y="35.5" width="44.5" height="21"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <rect key="frame" x="177" y="36" width="42" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                                             <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -140,7 +143,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="wMA-yE-NQX" secondAttribute="bottom" constant="10" id="J1H-Ge-Zlp"/>
                                                 <constraint firstItem="wMA-yE-NQX" firstAttribute="width" secondItem="dzP-3m-61c" secondAttribute="width" multiplier="0.925" id="lgc-YO-UYb"/>
-                                                <constraint firstItem="wMA-yE-NQX" firstAttribute="leading" secondItem="dzP-3m-61c" secondAttribute="leading" id="n6f-gs-P3v"/>
+                                                <constraint firstItem="wMA-yE-NQX" firstAttribute="leading" secondItem="dzP-3m-61c" secondAttribute="leading" constant="-10" id="n6f-gs-P3v"/>
                                                 <constraint firstItem="wMA-yE-NQX" firstAttribute="top" secondItem="dzP-3m-61c" secondAttribute="top" constant="16" id="qbu-f9-liO"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -174,5 +177,176 @@
             </objects>
             <point key="canvasLocation" x="176.80000000000001" y="113.79310344827587"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="uFW-8b-7Bi">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="1qb-2H-6XD" customClass="AboutViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WS2-ux-MgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Stq-Yf-1OT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="880"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CoL-SW-et8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-UR-I5j">
+                                                <rect key="frame" x="10" y="222" width="355" height="578"/>
+                                                <mutableString key="text">Американский университет в Центральной Азии в партнерстве с кадровой компанией WIND и спонсорами BEELINE и BANK OF ASIA проведут тренинги и семинары по подготовке к профессиональной деятельности молодых специалистов.
+
+Концепция мероприятия заключается в мультифункциональности пространства, ориентированного на потребности студентов и выпускников, это: 
+
+1. возможность продолжения учебы в магистерских программах; 
+2. возможность трудоустройства студентов;
+3. возможность создания своего бизнеса и предоставление рабочих мест в сфере туризма.
+4. возможность привлечь внимание на профессии окружающей среды
+
+Соответственно, ярмарка карьеры и стартапов будет совмещать четыре зоны: 
+1.	образовательные программы 
+2.	компании, предлагающие вакансии и стажировки 
+3.	зона стартапов в сфере туризма
+4.	карьера в сфере окружающая среда</mutableString>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="career-fair-logo" translatesAutoresizingMaskIntoConstraints="NO" id="wTh-0q-Bra">
+                                                <rect key="frame" x="24" y="8" width="325" height="198"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="H7X-UR-I5j" firstAttribute="leading" secondItem="CoL-SW-et8" secondAttribute="leading" constant="10" id="H2E-Ce-iHq"/>
+                                            <constraint firstAttribute="trailing" secondItem="H7X-UR-I5j" secondAttribute="trailing" constant="10" id="KRX-pG-4id"/>
+                                            <constraint firstItem="H7X-UR-I5j" firstAttribute="top" secondItem="wTh-0q-Bra" secondAttribute="bottom" constant="16" id="SAj-Mj-FCV"/>
+                                            <constraint firstAttribute="trailing" secondItem="wTh-0q-Bra" secondAttribute="trailing" constant="26" id="UJ1-Iy-7Zk"/>
+                                            <constraint firstItem="wTh-0q-Bra" firstAttribute="leading" secondItem="CoL-SW-et8" secondAttribute="leading" constant="24" id="gtC-Q9-Fp1"/>
+                                            <constraint firstItem="wTh-0q-Bra" firstAttribute="top" secondItem="CoL-SW-et8" secondAttribute="top" constant="8" id="pCF-zL-dD8"/>
+                                            <constraint firstAttribute="height" constant="900" id="rZr-mS-X4b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CoL-SW-et8" secondAttribute="trailing" id="Bgx-Fg-JhX"/>
+                                    <constraint firstAttribute="bottom" secondItem="CoL-SW-et8" secondAttribute="bottom" constant="-20" id="Eoq-LW-r5q"/>
+                                    <constraint firstItem="CoL-SW-et8" firstAttribute="leading" secondItem="Stq-Yf-1OT" secondAttribute="leading" id="Uxv-l4-Eyb"/>
+                                    <constraint firstItem="CoL-SW-et8" firstAttribute="top" secondItem="Stq-Yf-1OT" secondAttribute="top" id="kjX-ko-24W"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Stq-Yf-1OT" firstAttribute="trailing" secondItem="SEb-gV-K6R" secondAttribute="trailing" id="9Fw-Od-xdp"/>
+                            <constraint firstItem="Stq-Yf-1OT" firstAttribute="bottom" secondItem="SEb-gV-K6R" secondAttribute="bottom" id="TLA-nD-bR6"/>
+                            <constraint firstItem="Stq-Yf-1OT" firstAttribute="top" secondItem="SEb-gV-K6R" secondAttribute="top" id="esO-xW-Zkd"/>
+                            <constraint firstItem="CoL-SW-et8" firstAttribute="width" secondItem="WS2-ux-MgQ" secondAttribute="width" id="nGH-pO-gdQ"/>
+                            <constraint firstItem="Stq-Yf-1OT" firstAttribute="leading" secondItem="SEb-gV-K6R" secondAttribute="leading" id="qqv-Ud-BGl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SEb-gV-K6R"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck0-PN-YjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="112.44377811094454"/>
+        </scene>
+        <!--Organizators View Controller-->
+        <scene sceneID="Zkx-bV-Scf">
+            <objects>
+                <viewController id="CmZ-pq-C23" customClass="OrganizatorsViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlV-g3-Fbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1j0-A6-c0X">
+                                <rect key="frame" x="0.0" y="20" width="375" height="880"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmI-lZ-u1J">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Gz-q4-yAr">
+                                                <rect key="frame" x="0.0" y="8" width="375" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U65-nf-hwR">
+                                                    <size key="itemSize" width="123" height="113"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="FUX-BZ-MeA" customClass="OrgCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="7.5" width="123" height="113"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="123" height="113"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="uO7-Lg-P1Q">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="123" height="113"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </view>
+                                                        <connections>
+                                                            <outlet property="image" destination="uO7-Lg-P1Q" id="IF3-m4-5bP"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="CmZ-pq-C23" id="3h6-V0-FIK"/>
+                                                    <outlet property="delegate" destination="CmZ-pq-C23" id="eee-xJ-7Ih"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAk-kE-avD">
+                                                <rect key="frame" x="11" y="144" width="356" height="728"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">Amazon.com, Inc. (произносится э́мазон ком инко́рпоре́йтед, на русском языке наибольшее распространение получило произношение амазо́н) — американская компания, крупнейшая в мире по обороту среди продающих товары и услуги через Интернет[7] и один из первых интернет-сервисов, ориентированных на продажу реальных товаров массового спроса. Штаб-квартира расположена в Сиэтле (штат Вашингтон).
+
+Компания Amazon.com была создана в 1994 году американским предпринимателем Джеффом Безосом, а в 1995 году был запущен сайт. Компания была названа в честь реки Амазонки, самой полноводной в мире[8]. Изначально на сайте продавались только книги. В июне 1998 года магазин начинает продавать музыкальные диски, а в ноябре того же года — видеопродукцию. Позднее в ассортименте появились MP3-записи, программное обеспечение, видеоигры, электроника, одеждa, мебель, пищевые продукты и игрушки[9].
+
+Легенда гласит, что свой первый рабочий стол основатель Amazon.com сколотил из дверей. Сегодня в компании некоторые столы также сделаны из дверей, но не в целях экономии, а чтобы напоминать о необходимости экономить[10].
+
+Первичное размещение акций Amazon.com состоялось 15 мая 1997 года на NASDAQ.</mutableString>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="900" id="BCf-L1-obS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GmI-lZ-u1J" secondAttribute="trailing" id="Hgx-4o-Itq"/>
+                                    <constraint firstItem="GmI-lZ-u1J" firstAttribute="top" secondItem="1j0-A6-c0X" secondAttribute="top" id="U0K-6S-Ah2"/>
+                                    <constraint firstItem="GmI-lZ-u1J" firstAttribute="leading" secondItem="1j0-A6-c0X" secondAttribute="leading" id="fWS-4i-zXV"/>
+                                    <constraint firstAttribute="bottom" secondItem="GmI-lZ-u1J" secondAttribute="bottom" id="pL7-eG-z1S"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1j0-A6-c0X" firstAttribute="trailing" secondItem="QIT-Cr-1qk" secondAttribute="trailing" id="HNf-01-YxF"/>
+                            <constraint firstItem="1j0-A6-c0X" firstAttribute="bottom" secondItem="QIT-Cr-1qk" secondAttribute="bottom" id="Q1V-F7-3uX"/>
+                            <constraint firstItem="1j0-A6-c0X" firstAttribute="leading" secondItem="QIT-Cr-1qk" secondAttribute="leading" id="UbR-zK-Pvc"/>
+                            <constraint firstItem="1j0-A6-c0X" firstAttribute="top" secondItem="QIT-Cr-1qk" secondAttribute="top" id="Y5i-sL-ebI"/>
+                            <constraint firstItem="GmI-lZ-u1J" firstAttribute="width" secondItem="vlV-g3-Fbd" secondAttribute="width" id="uC1-xw-Rsd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QIT-Cr-1qk"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHa-Qb-dOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584.8" y="112.44377811094454"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="career-fair-logo" width="362" height="198"/>
+        <image name="test-image" width="76" height="38"/>
+    </resources>
 </document>

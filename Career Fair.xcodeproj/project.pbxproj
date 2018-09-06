@@ -11,6 +11,10 @@
 		526C080F2139336C0081A637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526C080E2139336C0081A637 /* Assets.xcassets */; };
 		526C08122139336D0081A637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C08102139336D0081A637 /* LaunchScreen.storyboard */; };
 		526C081E21394CB00081A637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C081D21394CB00081A637 /* Extensions.swift */; };
+		526C082C2141AA360081A637 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C082B2141AA360081A637 /* AboutViewController.swift */; };
+		526C082F2141B2730081A637 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 526C082E2141B2720081A637 /* Roboto-Regular.ttf */; };
+		526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */; };
+		526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08322141B6240081A637 /* OrgCollectionViewCell.swift */; };
 		84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F8F213FBAC100CBB71B /* CustomUI.swift */; };
 		84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F93213FC07600CBB71B /* MainTableViewCell.swift */; };
 		84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F95213FEA7200CBB71B /* MainViewController.swift */; };
@@ -29,6 +33,10 @@
 		526C08112139336D0081A637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526C08132139336E0081A637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526C081D21394CB00081A637 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		526C082B2141AA360081A637 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		526C082E2141B2720081A637 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizatorsViewController.swift; sourceTree = "<group>"; };
+		526C08322141B6240081A637 /* OrgCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCollectionViewCell.swift; sourceTree = "<group>"; };
 		84367F8F213FBAC100CBB71B /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
 		84367F93213FC07600CBB71B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		84367F95213FEA7200CBB71B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +88,7 @@
 		526C0806213933600081A637 /* Career Fair */ = {
 			isa = PBXGroup;
 			children = (
+				526C082D2141AA440081A637 /* Menu Files */,
 				84367F97213FFC1300CBB71B /* Fonts */,
 				84367F92213FBB9200CBB71B /* Menu */,
 				84367F91213FBB4200CBB71B /* Supporting files */,
@@ -89,6 +98,16 @@
 				526C08132139336E0081A637 /* Info.plist */,
 			);
 			path = "Career Fair";
+			sourceTree = "<group>";
+		};
+		526C082D2141AA440081A637 /* Menu Files */ = {
+			isa = PBXGroup;
+			children = (
+				526C082B2141AA360081A637 /* AboutViewController.swift */,
+				526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */,
+				526C08322141B6240081A637 /* OrgCollectionViewCell.swift */,
+			);
+			path = "Menu Files";
 			sourceTree = "<group>";
 		};
 		84367F91213FBB4200CBB71B /* Supporting files */ = {
@@ -115,6 +134,7 @@
 			children = (
 				84367F98213FFC6800CBB71B /* Roboto-Black.ttf */,
 				84367F9C213FFEC500CBB71B /* Roboto-Bold.ttf */,
+				526C082E2141B2720081A637 /* Roboto-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -188,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526C082F2141B2730081A637 /* Roboto-Regular.ttf in Resources */,
 				526C08122139336D0081A637 /* LaunchScreen.storyboard in Resources */,
 				8497E918213E9645002925E4 /* Main.storyboard in Resources */,
 				84367F9D213FFEC600CBB71B /* Roboto-Bold.ttf in Resources */,
@@ -244,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526C082C2141AA360081A637 /* AboutViewController.swift in Sources */,
+				526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
 				84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */,
 				84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */,
+				526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
 				84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */,
 			);

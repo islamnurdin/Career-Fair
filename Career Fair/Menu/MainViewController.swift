@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource{
@@ -27,7 +28,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         cell.fillMain(index: indexPath.row)
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
