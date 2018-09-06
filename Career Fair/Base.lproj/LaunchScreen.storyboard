@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,16 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aoy-BH-ncq">
-                                <rect key="frame" x="83" y="279" width="243" height="139"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Aoy-BH-ncq">
+                                <rect key="frame" x="0.0" y="70.666666666666686" width="414" height="595"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.13333333333333333" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aoy-BH-ncq" secondAttribute="trailing" constant="88" id="Bir-5d-5oA"/>
-                            <constraint firstItem="Aoy-BH-ncq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="Jam-Jh-1th"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aoy-BH-ncq" secondAttribute="bottom" constant="318" id="RAt-9N-P57"/>
-                            <constraint firstItem="Aoy-BH-ncq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="259" id="w93-kw-h9m"/>
+                            <constraint firstItem="Aoy-BH-ncq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2W8-YA-WLc"/>
+                            <constraint firstItem="Aoy-BH-ncq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NKu-4M-s09"/>
+                            <constraint firstItem="Aoy-BH-ncq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SJm-AK-Jv0"/>
+                            <constraint firstItem="Aoy-BH-ncq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZLs-DC-kur"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo.png" width="148" height="81"/>
+        <image name="intro_logo" width="595" height="595"/>
     </resources>
 </document>

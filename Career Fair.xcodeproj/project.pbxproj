@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		526C0808213933630081A637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C0807213933620081A637 /* AppDelegate.swift */; };
-		526C080A213933640081A637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C0809213933640081A637 /* ViewController.swift */; };
 		526C080F2139336C0081A637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526C080E2139336C0081A637 /* Assets.xcassets */; };
 		526C08122139336D0081A637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C08102139336D0081A637 /* LaunchScreen.storyboard */; };
-		526C081C213938C20081A637 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 526C081B213938C20081A637 /* Logo.png */; };
 		526C081E21394CB00081A637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C081D21394CB00081A637 /* Extensions.swift */; };
-		526C082021395DD80081A637 /* О Ярмарке Вакансий.png in Resources */ = {isa = PBXBuildFile; fileRef = 526C081F21395DD70081A637 /* О Ярмарке Вакансий.png */; };
-		526C082221395F490081A637 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 526C082121395F490081A637 /* Arrow.png */; };
+		84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F8F213FBAC100CBB71B /* CustomUI.swift */; };
+		84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F93213FC07600CBB71B /* MainTableViewCell.swift */; };
+		84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F95213FEA7200CBB71B /* MainViewController.swift */; };
+		84367F99213FFC6800CBB71B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84367F98213FFC6800CBB71B /* Roboto-Black.ttf */; };
+		84367F9D213FFEC600CBB71B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84367F9C213FFEC500CBB71B /* Roboto-Bold.ttf */; };
 		8497E918213E9645002925E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497E917213E9645002925E4 /* Main.storyboard */; };
 		891443105578A84B90343DC7 /* Pods_Career_Fair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5E342D7D4307CEA78C82D /* Pods_Career_Fair.framework */; };
 /* End PBXBuildFile section */
@@ -24,14 +25,15 @@
 		519F33D44EECBF8F57C900C4 /* Pods-Career Fair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Fair.release.xcconfig"; path = "Pods/Target Support Files/Pods-Career Fair/Pods-Career Fair.release.xcconfig"; sourceTree = "<group>"; };
 		526C08042139335F0081A637 /* Career Fair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Career Fair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		526C0807213933620081A637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		526C0809213933640081A637 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		526C080E2139336C0081A637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526C08112139336D0081A637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526C08132139336E0081A637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		526C081B213938C20081A637 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		526C081D21394CB00081A637 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		526C081F21395DD70081A637 /* О Ярмарке Вакансий.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "О Ярмарке Вакансий.png"; sourceTree = "<group>"; };
-		526C082121395F490081A637 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		84367F8F213FBAC100CBB71B /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
+		84367F93213FC07600CBB71B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		84367F95213FEA7200CBB71B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		84367F98213FFC6800CBB71B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		84367F9C213FFEC500CBB71B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		8497E917213E9645002925E4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F340DE6682C7BDC7B08C5A19 /* Pods-Career Fair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Fair.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Career Fair/Pods-Career Fair.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,18 +80,43 @@
 		526C0806213933600081A637 /* Career Fair */ = {
 			isa = PBXGroup;
 			children = (
+				84367F97213FFC1300CBB71B /* Fonts */,
+				84367F92213FBB9200CBB71B /* Menu */,
+				84367F91213FBB4200CBB71B /* Supporting files */,
 				526C0807213933620081A637 /* AppDelegate.swift */,
-				526C0809213933640081A637 /* ViewController.swift */,
-				526C081D21394CB00081A637 /* Extensions.swift */,
-				8497E917213E9645002925E4 /* Main.storyboard */,
-				526C080E2139336C0081A637 /* Assets.xcassets */,
-				526C081F21395DD70081A637 /* О Ярмарке Вакансий.png */,
-				526C081B213938C20081A637 /* Logo.png */,
-				526C082121395F490081A637 /* Arrow.png */,
 				526C08102139336D0081A637 /* LaunchScreen.storyboard */,
+				526C080E2139336C0081A637 /* Assets.xcassets */,
 				526C08132139336E0081A637 /* Info.plist */,
 			);
 			path = "Career Fair";
+			sourceTree = "<group>";
+		};
+		84367F91213FBB4200CBB71B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				526C081D21394CB00081A637 /* Extensions.swift */,
+				84367F8F213FBAC100CBB71B /* CustomUI.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		84367F92213FBB9200CBB71B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				8497E917213E9645002925E4 /* Main.storyboard */,
+				84367F93213FC07600CBB71B /* MainTableViewCell.swift */,
+				84367F95213FEA7200CBB71B /* MainViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		84367F97213FFC1300CBB71B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84367F98213FFC6800CBB71B /* Roboto-Black.ttf */,
+				84367F9C213FFEC500CBB71B /* Roboto-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		959EB8E2A0EB7D8534A19479 /* Frameworks */ = {
@@ -161,12 +188,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526C081C213938C20081A637 /* Logo.png in Resources */,
 				526C08122139336D0081A637 /* LaunchScreen.storyboard in Resources */,
-				526C082021395DD80081A637 /* О Ярмарке Вакансий.png in Resources */,
 				8497E918213E9645002925E4 /* Main.storyboard in Resources */,
+				84367F9D213FFEC600CBB71B /* Roboto-Bold.ttf in Resources */,
 				526C080F2139336C0081A637 /* Assets.xcassets in Resources */,
-				526C082221395F490081A637 /* Arrow.png in Resources */,
+				84367F99213FFC6800CBB71B /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526C080A213933640081A637 /* ViewController.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
+				84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */,
+				84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
+				84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
