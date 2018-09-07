@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CmZ-pq-C23">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFc-48-Y6E">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,6 +15,9 @@
         </array>
         <array key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
         </array>
         <array key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
@@ -69,14 +72,14 @@
             <objects>
                 <viewController id="1E1-CQ-2T2" customClass="MainViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jW-ce-lU3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-gb-qME">
-                                <rect key="frame" x="0.0" y="47" width="375" height="620"/>
+                                <rect key="frame" x="0.0" y="47" width="414" height="689"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="cEx-pI-4Zy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ярмарке Вакансий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-dy-aNU">
@@ -98,17 +101,17 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainTableViewCell" rowHeight="122" id="oUd-cf-cyz" customClass="MainTableViewCell" customModule="Career_Fair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="98" width="375" height="122"/>
+                                        <rect key="frame" x="0.0" y="98" width="414" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oUd-cf-cyz" id="dzP-3m-61c">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-yE-NQX" customClass="CustomView" customModule="Career_Fair" customModuleProvider="target">
-                                                    <rect key="frame" x="-10" y="16" width="347" height="96"/>
+                                                    <rect key="frame" x="-10" y="16" width="383" height="96"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-RZ-Gnm">
-                                                            <rect key="frame" x="177" y="36" width="42" height="20"/>
+                                                            <rect key="frame" x="197" y="36" width="42" height="20"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                                             <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -121,7 +124,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krO-jg-95T">
-                                                            <rect key="frame" x="337" y="0.0" width="10" height="96"/>
+                                                            <rect key="frame" x="373" y="0.0" width="10" height="96"/>
                                                             <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="10" id="y6G-Ya-7AI"/>
@@ -133,6 +136,7 @@
                                                         <constraint firstItem="Lj5-RZ-Gnm" firstAttribute="centerY" secondItem="wMA-yE-NQX" secondAttribute="centerY" constant="-2" id="G3s-64-eAS"/>
                                                         <constraint firstItem="8KY-lB-IeM" firstAttribute="leading" secondItem="wMA-yE-NQX" secondAttribute="leading" id="HHq-iG-d9X"/>
                                                         <constraint firstItem="krO-jg-95T" firstAttribute="top" secondItem="wMA-yE-NQX" secondAttribute="top" id="I9y-0k-IFW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Lj5-RZ-Gnm" secondAttribute="trailing" constant="144" id="bi6-Hk-rbm"/>
                                                         <constraint firstAttribute="trailing" secondItem="krO-jg-95T" secondAttribute="trailing" id="lLb-Ff-SJ8"/>
                                                         <constraint firstAttribute="bottom" secondItem="8KY-lB-IeM" secondAttribute="bottom" id="lxc-Sa-M97"/>
                                                         <constraint firstAttribute="bottom" secondItem="krO-jg-95T" secondAttribute="bottom" id="v2Z-fg-wKl"/>
@@ -148,9 +152,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Lj5-RZ-Gnm" firstAttribute="centerX" secondItem="oUd-cf-cyz" secondAttribute="centerX" id="soU-zs-wak"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="mainView" destination="wMA-yE-NQX" id="BAO-DT-LGM"/>
                                             <outlet property="mainViewLeftConstraint" destination="n6f-gs-P3v" id="XeI-Xs-tBC"/>
@@ -193,7 +194,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-UR-I5j">
                                                 <rect key="frame" x="10" y="222" width="355" height="578"/>
-                                                <mutableString key="text">Американский университет в Центральной Азии в партнерстве с кадровой компанией WIND и спонсорами BEELINE и BANK OF ASIA проведут тренинги и семинары по подготовке к профессиональной деятельности молодых специалистов.
+                                                <string key="text">Американский университет в Центральной Азии в партнерстве с кадровой компанией WIND и спонсорами BEELINE и BANK OF ASIA проведут тренинги и семинары по подготовке к профессиональной деятельности молодых специалистов.
 
 Концепция мероприятия заключается в мультифункциональности пространства, ориентированного на потребности студентов и выпускников, это: 
 
@@ -206,7 +207,7 @@
 1.	образовательные программы 
 2.	компании, предлагающие вакансии и стажировки 
 3.	зона стартапов в сфере туризма
-4.	карьера в сфере окружающая среда</mutableString>
+4.	карьера в сфере окружающая среда</string>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -256,14 +257,14 @@
             <objects>
                 <viewController id="CmZ-pq-C23" customClass="OrganizatorsViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlV-g3-Fbd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1j0-A6-c0X">
-                                <rect key="frame" x="0.0" y="20" width="375" height="880"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmI-lZ-u1J">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Gz-q4-yAr">
                                                 <rect key="frame" x="0.0" y="8" width="375" height="128"/>
@@ -276,19 +277,24 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="FUX-BZ-MeA" customClass="OrgCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="7.5" width="123" height="113"/>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="organizatorsCell" id="FUX-BZ-MeA" customClass="OrgCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="7.666666666666667" width="123" height="113"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="123" height="113"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="uO7-Lg-P1Q">
+                                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="uO7-Lg-P1Q">
                                                                     <rect key="frame" x="0.0" y="0.0" width="123" height="113"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </view>
+                                                        <constraints>
+                                                            <constraint firstItem="uO7-Lg-P1Q" firstAttribute="leading" secondItem="FUX-BZ-MeA" secondAttribute="leading" id="7fN-3F-smZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uO7-Lg-P1Q" secondAttribute="trailing" id="laU-YU-dhr"/>
+                                                            <constraint firstItem="uO7-Lg-P1Q" firstAttribute="top" secondItem="FUX-BZ-MeA" secondAttribute="top" id="qfd-cK-Khp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="uO7-Lg-P1Q" secondAttribute="bottom" id="rHr-5D-9cM"/>
+                                                        </constraints>
                                                         <connections>
                                                             <outlet property="image" destination="uO7-Lg-P1Q" id="IF3-m4-5bP"/>
                                                         </connections>
@@ -299,16 +305,21 @@
                                                     <outlet property="delegate" destination="CmZ-pq-C23" id="eee-xJ-7Ih"/>
                                                 </connections>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAk-kE-avD">
-                                                <rect key="frame" x="11" y="144" width="356" height="728"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQt-tg-laA">
+                                                <rect key="frame" x="8" y="138" width="359" height="3.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">Amazon.com, Inc. (произносится э́мазон ком инко́рпоре́йтед, на русском языке наибольшее распространение получило произношение амазо́н) — американская компания, крупнейшая в мире по обороту среди продающих товары и услуги через Интернет[7] и один из первых интернет-сервисов, ориентированных на продажу реальных товаров массового спроса. Штаб-квартира расположена в Сиэтле (штат Вашингтон).
+                                                <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAk-kE-avD">
+                                                <rect key="frame" x="18" y="149" width="349" height="756"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Amazon.com, Inc. (произносится э́мазон ком инко́рпоре́йтед, на русском языке наибольшее распространение получило произношение амазо́н) — американская компания, крупнейшая в мире по обороту среди продающих товары и услуги через Интернет[7] и один из первых интернет-сервисов, ориентированных на продажу реальных товаров массового спроса. Штаб-квартира расположена в Сиэтле (штат Вашингтон).
 
 Компания Amazon.com была создана в 1994 году американским предпринимателем Джеффом Безосом, а в 1995 году был запущен сайт. Компания была названа в честь реки Амазонки, самой полноводной в мире[8]. Изначально на сайте продавались только книги. В июне 1998 года магазин начинает продавать музыкальные диски, а в ноябре того же года — видеопродукцию. Позднее в ассортименте появились MP3-записи, программное обеспечение, видеоигры, электроника, одеждa, мебель, пищевые продукты и игрушки[9].
 
 Легенда гласит, что свой первый рабочий стол основатель Amazon.com сколотил из дверей. Сегодня в компании некоторые столы также сделаны из дверей, но не в целях экономии, а чтобы напоминать о необходимости экономить[10].
 
-Первичное размещение акций Amazon.com состоялось 15 мая 1997 года на NASDAQ.</mutableString>
+Первичное размещение акций Amazon.com состоялось 15 мая 1997 года на NASDAQ.</string>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -316,7 +327,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="900" id="BCf-L1-obS"/>
+                                            <constraint firstAttribute="height" constant="1000" id="BCf-L1-obS"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -338,11 +349,125 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QIT-Cr-1qk"/>
                     </view>
-                    <size key="freeformSize" width="375" height="900"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHa-Qb-dOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="112.44377811094454"/>
+            <point key="canvasLocation" x="1584.7826086956522" y="111.68478260869566"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="yU3-mj-Hte">
+            <objects>
+                <viewController id="BFc-48-Y6E" customClass="ScheduleViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YeF-Dh-6r5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KV6-J2-r5E">
+                                <rect key="frame" x="0.0" y="95" width="414" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2lf-4c-f9z">
+                                    <size key="itemSize" width="414" height="136"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="scheduleCell" id="zKh-SN-ebs" customClass="ScheduleCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tie-Bg-thX">
+                                                    <rect key="frame" x="20" y="20" width="46" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                    <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Что написать на «чистой доске»?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ts8-UE-sNg">
+                                                    <rect key="frame" x="93" y="11" width="153" height="110"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.95206591459911549" green="0.95580187182741116" blue="0.92333024339188641" alpha="0.48886986301369861" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                                    <color key="textColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oe7-tS-L6b">
+                                                    <rect key="frame" x="38" y="49" width="5" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljn-mf-hfn">
+                                                    <rect key="frame" x="352" y="16" width="57" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">2 этаж
+410 каб.</string>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Александр Федосеевич Бестужев" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKB-mk-2n5">
+                                                    <rect key="frame" x="256" y="16" width="69" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="location" destination="ljn-mf-hfn" id="NwX-s2-HQX"/>
+                                            <outlet property="speaker" destination="JKB-mk-2n5" id="5LU-u9-dlp"/>
+                                            <outlet property="theme" destination="Ts8-UE-sNg" id="Mhu-NV-Z3o"/>
+                                            <outlet property="time" destination="Tie-Bg-thX" id="iem-fg-jKw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BFc-48-Y6E" id="Uwi-gr-7Iu"/>
+                                    <outlet property="delegate" destination="BFc-48-Y6E" id="lNE-P5-tXB"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Время" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-WB-PIW">
+                                <rect key="frame" x="20" y="68" width="46" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Тема" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJM-pR-NYu">
+                                <rect key="frame" x="93" y="68" width="36" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Место" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gr-Di-RH4">
+                                <rect key="frame" x="352" y="68" width="48" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Спикер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhH-Yh-AM8">
+                                <rect key="frame" x="260" y="69" width="52" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zmo-gE-Q1u"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBa-V2-8UP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.2463768115945" y="18.75"/>
         </scene>
     </scenes>
     <resources>

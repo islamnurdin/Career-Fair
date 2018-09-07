@@ -34,12 +34,18 @@ extension UIView {
 
 extension UIImageView {
     func applyStylesToImage() {
-        self.layer.cornerRadius = 55
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 4
+        self.layer.cornerRadius = self.frame.height / 2
+        self.layer.borderColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0).cgColor
+        self.layer.borderWidth = 1
+    }
+    
+    func applyStyleToSelectedView() {
+        self.layer.shadowColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0).cgColor
+        self.layer.shadowOffset = CGSize(width: 2.0, height: 4.0)
+        self.layer.shadowOpacity = 1
+        self.layer.shadowRadius = 10
     }
 }
-
 
 extension UITableViewCell {
     func applyStyleViewCell() {

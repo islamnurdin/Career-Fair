@@ -8,25 +8,25 @@
 
 import UIKit
 
-class OrganizatorsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class OrganizatorsViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+}
+
+extension OrganizatorsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! OrgCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "organizatorsCell", for: indexPath) as! OrgCollectionViewCell
         
         cell.image.applyStylesToImage()
         return cell
-        
     }
-    
-
 
 }
