@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFc-48-Y6E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1E1-CQ-2T2">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -108,14 +108,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-yE-NQX" customClass="CustomView" customModule="Career_Fair" customModuleProvider="target">
-                                                    <rect key="frame" x="-10" y="16" width="383" height="96"/>
+                                                    <rect key="frame" x="-20" y="16" width="383" height="96"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-RZ-Gnm">
-                                                            <rect key="frame" x="197" y="36" width="42" height="20"/>
-                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
-                                                            <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KY-lB-IeM">
                                                             <rect key="frame" x="0.0" y="0.0" width="10" height="96"/>
                                                             <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,13 +124,19 @@
                                                                 <constraint firstAttribute="width" constant="10" id="y6G-Ya-7AI"/>
                                                             </constraints>
                                                         </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-RZ-Gnm">
+                                                            <rect key="frame" x="87" y="38" width="260" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                                                            <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="Lj5-RZ-Gnm" firstAttribute="centerY" secondItem="wMA-yE-NQX" secondAttribute="centerY" constant="-2" id="G3s-64-eAS"/>
+                                                        <constraint firstItem="Lj5-RZ-Gnm" firstAttribute="centerY" secondItem="wMA-yE-NQX" secondAttribute="centerY" id="G3s-64-eAS"/>
                                                         <constraint firstItem="8KY-lB-IeM" firstAttribute="leading" secondItem="wMA-yE-NQX" secondAttribute="leading" id="HHq-iG-d9X"/>
                                                         <constraint firstItem="krO-jg-95T" firstAttribute="top" secondItem="wMA-yE-NQX" secondAttribute="top" id="I9y-0k-IFW"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Lj5-RZ-Gnm" secondAttribute="trailing" constant="144" id="bi6-Hk-rbm"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Lj5-RZ-Gnm" secondAttribute="trailing" constant="36" id="bi6-Hk-rbm"/>
                                                         <constraint firstAttribute="trailing" secondItem="krO-jg-95T" secondAttribute="trailing" id="lLb-Ff-SJ8"/>
                                                         <constraint firstAttribute="bottom" secondItem="8KY-lB-IeM" secondAttribute="bottom" id="lxc-Sa-M97"/>
                                                         <constraint firstAttribute="bottom" secondItem="krO-jg-95T" secondAttribute="bottom" id="v2Z-fg-wKl"/>
@@ -147,12 +147,16 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="wMA-yE-NQX" secondAttribute="bottom" constant="10" id="J1H-Ge-Zlp"/>
                                                 <constraint firstItem="wMA-yE-NQX" firstAttribute="width" secondItem="dzP-3m-61c" secondAttribute="width" multiplier="0.925" id="lgc-YO-UYb"/>
-                                                <constraint firstItem="wMA-yE-NQX" firstAttribute="leading" secondItem="dzP-3m-61c" secondAttribute="leading" constant="-10" id="n6f-gs-P3v"/>
+                                                <constraint firstItem="wMA-yE-NQX" firstAttribute="leading" secondItem="dzP-3m-61c" secondAttribute="leading" constant="-20" id="n6f-gs-P3v"/>
                                                 <constraint firstItem="wMA-yE-NQX" firstAttribute="top" secondItem="dzP-3m-61c" secondAttribute="top" constant="16" id="qbu-f9-liO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Lj5-RZ-Gnm" firstAttribute="centerX" secondItem="oUd-cf-cyz" secondAttribute="centerX" constant="-10" id="tcm-n2-n3j"/>
+                                        </constraints>
                                         <connections>
+                                            <outlet property="label" destination="Lj5-RZ-Gnm" id="g3y-ed-UCd"/>
                                             <outlet property="mainView" destination="wMA-yE-NQX" id="BAO-DT-LGM"/>
                                             <outlet property="mainViewLeftConstraint" destination="n6f-gs-P3v" id="XeI-Xs-tBC"/>
                                         </connections>
@@ -193,7 +197,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-UR-I5j">
-                                                <rect key="frame" x="10" y="222" width="355" height="578"/>
+                                                <rect key="frame" x="10" y="222" width="355" height="574.66666666666663"/>
                                                 <string key="text">Американский университет в Центральной Азии в партнерстве с кадровой компанией WIND и спонсорами BEELINE и BANK OF ASIA проведут тренинги и семинары по подготовке к профессиональной деятельности молодых специалистов.
 
 Концепция мероприятия заключается в мультифункциональности пространства, ориентированного на потребности студентов и выпускников, это: 
@@ -353,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHa-Qb-dOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.7826086956522" y="111.68478260869566"/>
+            <point key="canvasLocation" x="1541" y="152"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="yU3-mj-Hte">
@@ -467,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBa-V2-8UP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407.2463768115945" y="18.75"/>
+            <point key="canvasLocation" x="2210" y="45"/>
         </scene>
     </scenes>
     <resources>

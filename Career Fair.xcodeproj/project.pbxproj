@@ -15,6 +15,8 @@
 		526C082F2141B2730081A637 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 526C082E2141B2720081A637 /* Roboto-Regular.ttf */; };
 		526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */; };
 		526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08322141B6240081A637 /* OrgCollectionViewCell.swift */; };
+		52F065AC21451AFA00950E12 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F065AB21451AFA00950E12 /* About.swift */; };
+		52F065AE214553B800950E12 /* Employer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F065AD214553B800950E12 /* Employer.swift */; };
 		84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F8F213FBAC100CBB71B /* CustomUI.swift */; };
 		84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F93213FC07600CBB71B /* MainTableViewCell.swift */; };
 		84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F95213FEA7200CBB71B /* MainViewController.swift */; };
@@ -40,6 +42,8 @@
 		526C082E2141B2720081A637 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizatorsViewController.swift; sourceTree = "<group>"; };
 		526C08322141B6240081A637 /* OrgCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCollectionViewCell.swift; sourceTree = "<group>"; };
+		52F065AB21451AFA00950E12 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		52F065AD214553B800950E12 /* Employer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employer.swift; sourceTree = "<group>"; };
 		84367F8F213FBAC100CBB71B /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
 		84367F93213FC07600CBB71B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		84367F95213FEA7200CBB71B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		526C0806213933600081A637 /* Career Fair */ = {
 			isa = PBXGroup;
 			children = (
+				52F065AA21451AD800950E12 /* Models */,
 				526C082D2141AA440081A637 /* Menu Files */,
 				84367F97213FFC1300CBB71B /* Fonts */,
 				84367F92213FBB9200CBB71B /* Menu */,
@@ -116,6 +121,15 @@
 				8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */,
 			);
 			path = "Menu Files";
+			sourceTree = "<group>";
+		};
+		52F065AA21451AD800950E12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52F065AB21451AFA00950E12 /* About.swift */,
+				52F065AD214553B800950E12 /* Employer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84367F91213FBB4200CBB71B /* Supporting files */ = {
@@ -277,6 +291,7 @@
 			files = (
 				526C082C2141AA360081A637 /* AboutViewController.swift in Sources */,
 				526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */,
+				52F065AC21451AFA00950E12 /* About.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
 				8484A8BD21426E8B00AA5086 /* ScheduleViewController.swift in Sources */,
 				84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */,
@@ -284,6 +299,7 @@
 				8484A8BF21426EA100AA5086 /* ScheduleCollectionViewCell.swift in Sources */,
 				526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
+				52F065AE214553B800950E12 /* Employer.swift in Sources */,
 				84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

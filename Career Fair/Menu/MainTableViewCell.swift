@@ -13,6 +13,9 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var mainViewLeftConstraint: NSLayoutConstraint!
     @IBOutlet weak var mainView: CustomView!
     
+    @IBOutlet weak var label: UILabel!
+    
+    
     static let cellID = "MainTableViewCell"
     
     override func awakeFromNib() {
@@ -27,9 +30,9 @@ class MainTableViewCell: UITableViewCell {
     
     func fillMain(index: Int) {
         if index % 2 == 0 {
-            mainViewLeftConstraint.constant = frame.size.width - mainView.frame.size.width - 20
+            mainViewLeftConstraint.constant = frame.size.width - mainView.frame.size.width + 25
         } else {
-            mainViewLeftConstraint.constant = -10
+            mainViewLeftConstraint.constant = -20
         }
     }
 }
