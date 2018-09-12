@@ -11,7 +11,11 @@ import UIKit
 class EmployerDetailsVC: UIViewController {
 
     var employer: Employer?
-    var dd = "fasdfas"
+    
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var companyDescription: UILabel!
+    @IBOutlet weak var companyImage: UIImageView!
+    @IBOutlet weak var companyDetails: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3H-nl-1If">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8is-Qn-Sx8">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,75 +27,89 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="6F0-ib-nAP">
             <objects>
-                <viewController id="8is-Qn-Sx8" sceneMemberID="viewController">
+                <viewController id="8is-Qn-Sx8" customClass="RegistrationViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pZL-Pa-ZG7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQR-5p-Z5q">
-                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BiX-p7-liw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="Ke5-BA-ze7"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="BiX-p7-liw" firstAttribute="leading" secondItem="tQR-5p-Z5q" secondAttribute="leading" id="JvN-OU-dgs"/>
-                                    <constraint firstAttribute="bottom" secondItem="BiX-p7-liw" secondAttribute="bottom" id="c3k-Lp-CdX"/>
-                                    <constraint firstAttribute="trailing" secondItem="BiX-p7-liw" secondAttribute="trailing" id="ic4-OW-nG5"/>
-                                    <constraint firstItem="BiX-p7-liw" firstAttribute="top" secondItem="tQR-5p-Z5q" secondAttribute="top" id="nN7-yF-urG"/>
-                                </constraints>
-                            </scrollView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-ba-8aB">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO" suppressesIncrementalRendering="YES">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-Mk-Eoo">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="par-2Y-zAQ"/>
+                                    <barButtonItem title="Done" width="402.66666666666663" id="r3k-Mg-aBH">
+                                        <connections>
+                                            <action selector="registered:" destination="8is-Qn-Sx8" id="Vzy-wc-RRz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WEi-oM-uRr"/>
+                                </items>
+                                <color key="tintColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prC-bC-hgE">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <color key="tintColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="7s1-0H-xQN">
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="TH9-aO-6iZ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tQR-5p-Z5q" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="Ox7-0W-qHT"/>
-                            <constraint firstItem="BiX-p7-liw" firstAttribute="width" secondItem="pZL-Pa-ZG7" secondAttribute="width" id="WwG-7U-Ur3"/>
-                            <constraint firstItem="tQR-5p-Z5q" firstAttribute="bottom" secondItem="Gt2-Kp-z5g" secondAttribute="bottom" id="f2Y-LJ-JFi"/>
-                            <constraint firstItem="tQR-5p-Z5q" firstAttribute="top" secondItem="Gt2-Kp-z5g" secondAttribute="top" id="mCp-u8-C44"/>
-                            <constraint firstItem="tQR-5p-Z5q" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="x4W-2n-a67"/>
+                            <constraint firstItem="lWh-Mk-Eoo" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="3GP-hK-OJI"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="94Z-lP-Kok"/>
+                            <constraint firstItem="lWh-Mk-Eoo" firstAttribute="bottom" secondItem="Gt2-Kp-z5g" secondAttribute="bottom" id="9XJ-4D-EqN"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="top" secondItem="pZL-Pa-ZG7" secondAttribute="top" constant="64" id="CK9-Dz-EOv"/>
+                            <constraint firstItem="prC-bC-hgE" firstAttribute="top" secondItem="Gt2-Kp-z5g" secondAttribute="top" id="Dwr-TN-AuI"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="MpH-9K-cyP"/>
+                            <constraint firstItem="prC-bC-hgE" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="Xjc-PK-AzI"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="bottom" secondItem="Gt2-Kp-z5g" secondAttribute="bottom" id="hol-5K-Rom"/>
+                            <constraint firstItem="prC-bC-hgE" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="jSa-kd-weR"/>
+                            <constraint firstItem="lWh-Mk-Eoo" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="ncD-86-l53"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gt2-Kp-z5g"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="doneButton" destination="lWh-Mk-Eoo" id="von-zG-sZy"/>
+                        <outlet property="navbar" destination="prC-bC-hgE" id="3sP-O7-uNX"/>
+                        <outlet property="registerWebView" destination="CMU-ba-8aB" id="ZcM-yN-8bb"/>
+                        <outlet property="titlee" destination="7s1-0H-xQN" id="Bnt-T6-2Pb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LII-Bs-OLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1401" y="112"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="JlH-Ci-Yj0">
-            <objects>
-                <navigationController id="yhR-Va-Msc" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9DP-6i-ogT">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="1E1-CQ-2T2" kind="relationship" relationship="rootViewController" id="Stj-KZ-IDy"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nd-f6-dVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-584" y="113"/>
+            <point key="canvasLocation" x="-1501.449275362319" y="111.68478260869566"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Lk3-TG-Vfd">
             <objects>
-                <viewController id="1E1-CQ-2T2" customClass="MainViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="1E1-CQ-2T2" customClass="MainViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jW-ce-lU3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-gb-qME">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="cEx-pI-4Zy">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -119,7 +133,7 @@
                                     <color key="backgroundColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainTableViewCell" rowHeight="122" id="oUd-cf-cyz" customClass="MainTableViewCell" customModule="Career_Fair" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainTableViewCell" rowHeight="122" id="oUd-cf-cyz" customClass="MainTableViewCell" customModule="Career_Fair" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="98" width="414" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oUd-cf-cyz" id="dzP-3m-61c">
@@ -200,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ou-8T-cPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175.36231884057972" y="113.31521739130436"/>
+            <point key="canvasLocation" x="-557" y="112"/>
         </scene>
         <!--Employer View Controller-->
         <scene sceneID="aaZ-BI-Koo">
@@ -215,7 +229,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmployerViewController" textLabel="m1D-SM-VHz" detailTextLabel="UnE-69-GTJ" style="IBUITableViewCellStyleSubtitle" id="fgB-Fb-cKC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmployerViewController" textLabel="m1D-SM-VHz" detailTextLabel="UnE-69-GTJ" imageView="fhg-m1-rKa" style="IBUITableViewCellStyleSubtitle" id="fgB-Fb-cKC">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fgB-Fb-cKC" id="9mn-gh-ty7">
@@ -223,19 +237,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m1D-SM-VHz">
-                                                    <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                                    <rect key="frame" x="111" y="5" width="33.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UnE-69-GTJ">
-                                                    <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <rect key="frame" x="111.00000000000001" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="test-image" id="fhg-m1-rKa">
+                                                    <rect key="frame" x="20" y="2" width="76" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -248,25 +266,124 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sT9-eV-jpj"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="3f2-Go-sT6" id="wiW-ZO-VnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48T-eQ-Per" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="964"/>
+            <point key="canvasLocation" x="862" y="964"/>
         </scene>
         <!--Employer DetailsVC-->
         <scene sceneID="M7o-z8-uFQ">
             <objects>
                 <viewController id="U7K-Iv-kVb" customClass="EmployerDetailsVC" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xcj-fc-5UD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAX-Y5-X8s">
+                                <rect key="frame" x="0.0" y="20" width="414" height="1180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0G-E2-yAH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-C0-hOC">
+                                                <rect key="frame" x="19" y="9" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amazon.com inc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D3-uG-JEI">
+                                                <rect key="frame" x="140" y="68" width="241" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amazon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-dc-8Iz">
+                                                <rect key="frame" x="140" y="26" width="241" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-fz-zu0">
+                                                <rect key="frame" x="141" y="58" width="240" height="2"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfm-q1-OSn">
+                                                <rect key="frame" x="26" y="117" width="362" height="3.6666666666666665"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDj-El-yO9">
+                                                <rect key="frame" x="26" y="128" width="373" height="1038"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Amazon.com, Inc. (произносится э́мазон ком инко́рпоре́йтед, на русском языке наибольшее распространение получило произношение амазо́н) — американская компания, крупнейшая в мире по обороту среди продающих товары и услуги через Интернет[7] и один из первых интернет-сервисов, ориентированных на продажу реальных товаров массового спроса. Штаб-квартира расположена в Сиэтле (штат Вашингтон).
+
+Компания Amazon.com была создана в 1994 году американским предпринимателем Джеффом Безосом, а в 1995 году был запущен сайт. Компания была названа в честь реки Амазонки, самой полноводной в мире[8]. Изначально на сайте продавались только книги. В июне 1998 года магазин начинает продавать музыкальные диски, а в ноябре того же года — видеопродукцию. Позднее в ассортименте появились MP3-записи, программное обеспечение, видеоигры, электроника, одеждa, мебель, пищевые продукты и игрушки[9].
+
+Легенда гласит, что свой первый рабочий стол основатель Amazon.com сколотил из дверей. Сегодня в компании некоторые столы также сделаны из дверей, но не в целях экономии, а чтобы напоминать о необходимости экономить[10].
+
+Первичное размещение акций Amazon.com состоялось 15 мая 1997 года на NASDAQ.
+
+В 2006 году Аmazon купил компанию Shopbop [11].
+
+В 2010 году Amazon купил компанию Quidsi (Diapers.com) за 545 миллионов долларов[12].
+
+В 2011 году в компании Amazon.com работало 30 тыс. сотрудников[13].
+
+В 2012 г. корпорация купила компанию Kiva Systems (в настоящее время — Amazon Robotics), производителя складских роботов, предназначенных для перемещения товаров в автоматическом режиме. По оценке аналитиков Уолл-стрит, внедрение роботов для автоматизации складских операций позволит Amazon сократить издержки на подготовку заказов на 40 %[14].
+
+9 октября 2014 года Amazon заявила о планах по открытию на Манхэттене (Нью-Йорк) первого в своей истории офлайн-магазина[15]. Чуть позже появилась информация ещё об одном киоске — на этот раз в Сан-Франциско[16].
+
+7 декабря 2016 года Джефф Безос заявил, что Amazon совершила первую доставку с помощью беспилотника[17][18].
+
+На конец 2016 года в компании работало 180 тыс. сотрудников[13][19].
+
+В 2017 году Amazon купил компанию Whole Foods Market за 14 миллиардов долларов[20].
+
+В июле 2018 года стало известно, что Amazon увеличил чистую прибыль во II квартале 2018 г. почти в 13 раз, по сравнению с аналогичным периодом 2017 года. Её показатель впервые превысил $2 млрд[21].</string>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="8Yo-nw-xd5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="I0G-E2-yAH" secondAttribute="trailing" id="N4g-F8-yL8"/>
+                                    <constraint firstAttribute="bottom" secondItem="I0G-E2-yAH" secondAttribute="bottom" constant="-20" id="ckT-qo-dPo"/>
+                                    <constraint firstItem="I0G-E2-yAH" firstAttribute="leading" secondItem="jAX-Y5-X8s" secondAttribute="leading" id="gjf-9d-awr"/>
+                                    <constraint firstItem="I0G-E2-yAH" firstAttribute="top" secondItem="jAX-Y5-X8s" secondAttribute="top" id="qnd-3n-MX2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jAX-Y5-X8s" firstAttribute="leading" secondItem="W0V-gb-YFo" secondAttribute="leading" id="AOP-e4-OnB"/>
+                            <constraint firstItem="jAX-Y5-X8s" firstAttribute="top" secondItem="W0V-gb-YFo" secondAttribute="top" id="HIH-99-Mub"/>
+                            <constraint firstItem="I0G-E2-yAH" firstAttribute="width" secondItem="Xcj-fc-5UD" secondAttribute="width" id="J8A-oD-hvV"/>
+                            <constraint firstItem="jAX-Y5-X8s" firstAttribute="bottom" secondItem="W0V-gb-YFo" secondAttribute="bottom" id="U8p-Pv-tvQ"/>
+                            <constraint firstItem="jAX-Y5-X8s" firstAttribute="trailing" secondItem="W0V-gb-YFo" secondAttribute="trailing" id="Z9Z-Lz-6J8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W0V-gb-YFo"/>
                     </view>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="companyDescription" destination="4D3-uG-JEI" id="R49-75-Lp8"/>
+                        <outlet property="companyDetails" destination="SDj-El-yO9" id="MVm-mV-syE"/>
+                        <outlet property="companyImage" destination="8dt-C0-hOC" id="VSD-A1-Jgs"/>
+                        <outlet property="companyName" destination="HY9-dc-8Iz" id="Uq2-yz-1nW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVL-IU-mSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="964"/>
+            <point key="canvasLocation" x="1647.826086956522" y="963.58695652173924"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="uFW-8b-7Bi">
@@ -443,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHa-Qb-dOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="1071"/>
+            <point key="canvasLocation" x="204" y="1071"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="yU3-mj-Hte">

@@ -9,7 +9,9 @@
 import UIKit
 
 class EmployerViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     let myImages: [UIImage] = [#imageLiteral(resourceName: "logo"),#imageLiteral(resourceName: "about"), #imageLiteral(resourceName: "intro_logo"),#imageLiteral(resourceName: "test-image")]
     let employers = [Employer]()
 
