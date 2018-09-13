@@ -13,9 +13,9 @@ class EmployerViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let myImages: [UIImage] = [#imageLiteral(resourceName: "about"), #imageLiteral(resourceName: "test-image"), #imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image")]
-    var employers = [Employer]()
-
+    var employers: Employer?
+    var employer = [Employer]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,11 +28,11 @@ class EmployerViewController: UIViewController {
     }
     
     func getEmployeData(completed: @escaping () -> ()) {
-        let url = URL(string: "https://api.opendota.com/api/heroStats")
+        let url = URL(string: "http://138.68.86.126/employer/")
         Alamofire.request(url!).responseJSON { response in
             let data = response.data
             do {
-                self.employers = try JSONDecoder().decode([Employer].self, from: data!)
+                self.employer = [try JSONDecoder().decode(Employer.self, from: data!)]
                 DispatchQueue.main.async {
                     completed()
                 }
@@ -47,23 +47,23 @@ class EmployerViewController: UIViewController {
 extension EmployerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return employers.count
+        return employer.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmployerViewController", for: indexPath)
-        cell.textLabel?.text = employers[indexPath.row].localized_name
-        cell.detailTextLabel?.text = employers[indexPath.row].name
-        cell.imageView?.image = myImages[indexPath.row]
+        cell.textLabel?.text = employer[indexPath.row].full_name
+        cell.detailTextLabel?.text = employer[indexPath.row].description
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "employerDetails", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? EmployerDetailsVC {
-            destination.employer = employers[(tableView.indexPathForSelectedRow?.row)!]
+            destination.employer = employer[(tableView.indexPathForSelectedRow?.row)!]
         }
     }
 }
