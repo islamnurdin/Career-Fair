@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8is-Qn-Sx8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3H-nl-1If">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,6 +27,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rJr-Lk-XBn">
+            <objects>
+                <navigationController id="3YU-aH-P8j" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4TS-ET-q2s">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8is-Qn-Sx8" kind="relationship" relationship="rootViewController" id="Xs5-dC-zJ0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hV0-vs-aeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2243" y="113"/>
+        </scene>
         <!--Registration View Controller-->
         <scene sceneID="6F0-ib-nAP">
             <objects>
@@ -36,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-ba-8aB">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO" suppressesIncrementalRendering="YES">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -57,43 +73,23 @@
                                 <color key="tintColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prC-bC-hgE">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                                <color key="tintColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <textAttributes key="largeTitleTextAttributes">
-                                    <color key="textColor" red="0.96508419700000003" green="0.99795076049999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Title" id="7s1-0H-xQN">
-                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="TH9-aO-6iZ"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lWh-Mk-Eoo" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="3GP-hK-OJI"/>
-                            <constraint firstItem="CMU-ba-8aB" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="94Z-lP-Kok"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="8PQ-Qc-tgh"/>
                             <constraint firstItem="lWh-Mk-Eoo" firstAttribute="bottom" secondItem="Gt2-Kp-z5g" secondAttribute="bottom" id="9XJ-4D-EqN"/>
-                            <constraint firstItem="CMU-ba-8aB" firstAttribute="top" secondItem="pZL-Pa-ZG7" secondAttribute="top" constant="64" id="CK9-Dz-EOv"/>
-                            <constraint firstItem="prC-bC-hgE" firstAttribute="top" secondItem="Gt2-Kp-z5g" secondAttribute="top" id="Dwr-TN-AuI"/>
-                            <constraint firstItem="CMU-ba-8aB" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="MpH-9K-cyP"/>
-                            <constraint firstItem="prC-bC-hgE" firstAttribute="leading" secondItem="Gt2-Kp-z5g" secondAttribute="leading" id="Xjc-PK-AzI"/>
-                            <constraint firstItem="CMU-ba-8aB" firstAttribute="bottom" secondItem="Gt2-Kp-z5g" secondAttribute="bottom" id="hol-5K-Rom"/>
-                            <constraint firstItem="prC-bC-hgE" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="jSa-kd-weR"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="adm-44-Bah"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="bottom" secondItem="Gt2-Kp-z5g" secondAttribute="bottom" id="baI-Df-ytx"/>
+                            <constraint firstItem="CMU-ba-8aB" firstAttribute="top" secondItem="pZL-Pa-ZG7" secondAttribute="top" id="cUZ-Pw-jdi"/>
                             <constraint firstItem="lWh-Mk-Eoo" firstAttribute="trailing" secondItem="Gt2-Kp-z5g" secondAttribute="trailing" id="ncD-86-l53"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gt2-Kp-z5g"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CFh-F8-eUX"/>
                     <connections>
                         <outlet property="doneButton" destination="lWh-Mk-Eoo" id="von-zG-sZy"/>
-                        <outlet property="navbar" destination="prC-bC-hgE" id="3sP-O7-uNX"/>
                         <outlet property="registerWebView" destination="CMU-ba-8aB" id="ZcM-yN-8bb"/>
-                        <outlet property="titlee" destination="7s1-0H-xQN" id="Bnt-T6-2Pb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LII-Bs-OLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,29 +225,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmployerViewController" textLabel="m1D-SM-VHz" detailTextLabel="UnE-69-GTJ" imageView="fhg-m1-rKa" style="IBUITableViewCellStyleSubtitle" id="fgB-Fb-cKC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmployerViewController" textLabel="C8w-ZX-faC" detailTextLabel="d9t-rs-ORt" imageView="SPU-Bn-DWI" style="IBUITableViewCellStyleSubtitle" id="fgB-Fb-cKC">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fgB-Fb-cKC" id="9mn-gh-ty7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m1D-SM-VHz">
-                                                    <rect key="frame" x="111" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C8w-ZX-faC">
+                                                    <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UnE-69-GTJ">
-                                                    <rect key="frame" x="111.00000000000001" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d9t-rs-ORt">
+                                                    <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="test-image" id="fhg-m1-rKa">
-                                                    <rect key="frame" x="20" y="2" width="76" height="38"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SPU-Bn-DWI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -383,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVL-IU-mSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647.826086956522" y="963.58695652173924"/>
+            <point key="canvasLocation" x="1617" y="1152"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="uFW-8b-7Bi">
@@ -457,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ck0-PN-YjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864" y="180"/>
+            <point key="canvasLocation" x="186" y="179"/>
         </scene>
         <!--Organizators View Controller-->
         <scene sceneID="Zkx-bV-Scf">
@@ -702,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBa-V2-8UP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1568" y="112"/>
+            <point key="canvasLocation" x="875" y="113"/>
         </scene>
     </scenes>
     <resources>

@@ -9,7 +9,6 @@
 import Foundation
 
 struct Employer: Decodable {
-    let fullName: String
-    let description: String
-    let logoURL: String
+    let name: String
+    let localized_name: String
 }

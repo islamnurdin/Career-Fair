@@ -7,48 +7,63 @@
 //
 
 import UIKit
+import Alamofire
 
 class EmployerViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let myImages: [UIImage] = [#imageLiteral(resourceName: "logo"),#imageLiteral(resourceName: "about"), #imageLiteral(resourceName: "intro_logo"),#imageLiteral(resourceName: "test-image")]
-    let employers = [Employer]()
+    let myImages: [UIImage] = [#imageLiteral(resourceName: "about"), #imageLiteral(resourceName: "test-image"), #imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image"),#imageLiteral(resourceName: "test-image")]
+    var employers = [Employer]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getEmployeData {
+            self.tableView.reloadData()
+        }
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? EmployerDetailsVC {
-            destination.employer = employers[(tableView.indexPathForSelectedRow?.row)!]
+    func getEmployeData(completed: @escaping () -> ()) {
+        let url = URL(string: "https://api.opendota.com/api/heroStats")
+        Alamofire.request(url!).responseJSON { response in
+            let data = response.data
+            do {
+                self.employers = try JSONDecoder().decode([Employer].self, from: data!)
+                DispatchQueue.main.async {
+                    completed()
+                }
+            }
+            catch let e{
+                print(e)
+            }
         }
     }
-    
 }
 
 extension EmployerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return employers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmployerViewController", for: indexPath)
-        cell.textLabel?.text = "eeeEe"
+        cell.textLabel?.text = employers[indexPath.row].localized_name
+        cell.detailTextLabel?.text = employers[indexPath.row].name
         cell.imageView?.image = myImages[indexPath.row]
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetails", sender: self)
+        performSegue(withIdentifier: "employerDetails", sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? EmployerDetailsVC {
+            destination.employer = employers[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
 }

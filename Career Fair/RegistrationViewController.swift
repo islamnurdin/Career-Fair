@@ -19,8 +19,8 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Register"
         registerWebView.uiDelegate = self as? WKUIDelegate
-        
         self.registerWebView.addObserver(self, forKeyPath: "URL", options: .new, context: nil)
 
         let url = URL(string: "https://docs.google.com/forms/d/1NIdI2kh4zNOWQ3ZFHysFEji85tyC2Ml3S07lgTEPIoM/edit#responses")
@@ -31,7 +31,7 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if keyPath == #keyPath(WKWebView.url) {
-            print("URL:", "\((self.registerWebView.url)!)")
+            
             let url = "\((self.registerWebView.url)!)"
             if url == "https://docs.google.com/forms/d/e/1FAIpQLSevckocpQKbsAVyn5xKaMBsDbR3rY90n5ItBoPy7xOAxfZkzw/formResponse" {
                 doneButton.isHidden = false
@@ -50,6 +50,7 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
     
     
     @IBAction func registered(_ sender: Any) {
+        print("pressed")
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
         navigationController?.present(vc!, animated: true)
