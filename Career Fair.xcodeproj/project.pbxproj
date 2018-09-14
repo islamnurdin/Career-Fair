@@ -24,11 +24,13 @@
 		84367F9D213FFEC600CBB71B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84367F9C213FFEC500CBB71B /* Roboto-Bold.ttf */; };
 		843A86092146439C003AF278 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A86082146439C003AF278 /* Constants.swift */; };
 		84416F282147DDA000C2E387 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84416F272147DDA000C2E387 /* RegistrationViewController.swift */; };
+		8441A24F214BD3D100173CB1 /* EmployersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441A24E214BD3D100173CB1 /* EmployersViewController.swift */; };
+		8441A251214BD3EB00173CB1 /* EmployersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */; };
+		8441A253214BF07200173CB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441A252214BF07200173CB1 /* MapViewController.swift */; };
 		8484A8BB21426DEE00AA5086 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8484A8BA21426DEE00AA5086 /* Roboto-Medium.ttf */; };
 		8484A8BD21426E8B00AA5086 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */; };
 		8484A8BF21426EA100AA5086 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */; };
 		8497E918213E9645002925E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497E917213E9645002925E4 /* Main.storyboard */; };
-		84BFAFAA21463125006BC533 /* EmployerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFAFA921463125006BC533 /* EmployerViewController.swift */; };
 		84BFAFAC214639A8006BC533 /* EmployerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */; };
 		891443105578A84B90343DC7 /* Pods_Career_Fair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5E342D7D4307CEA78C82D /* Pods_Career_Fair.framework */; };
 /* End PBXBuildFile section */
@@ -55,11 +57,13 @@
 		84367F9C213FFEC500CBB71B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		843A86082146439C003AF278 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84416F272147DDA000C2E387 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8441A24E214BD3D100173CB1 /* EmployersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersViewController.swift; sourceTree = "<group>"; };
+		8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersCollectionViewCell.swift; sourceTree = "<group>"; };
+		8441A252214BF07200173CB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8484A8BA21426DEE00AA5086 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		8497E917213E9645002925E4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		84BFAFA921463125006BC533 /* EmployerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerViewController.swift; sourceTree = "<group>"; };
 		84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerDetailsVC.swift; sourceTree = "<group>"; };
 		F340DE6682C7BDC7B08C5A19 /* Pods-Career Fair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Fair.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Career Fair/Pods-Career Fair.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +133,9 @@
 				8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */,
 				8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */,
 				84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */,
-				84BFAFA921463125006BC533 /* EmployerViewController.swift */,
+				8441A24E214BD3D100173CB1 /* EmployersViewController.swift */,
+				8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */,
+				8441A252214BF07200173CB1 /* MapViewController.swift */,
 			);
 			path = "Menu Files";
 			sourceTree = "<group>";
@@ -300,17 +306,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				526C082C2141AA360081A637 /* AboutViewController.swift in Sources */,
+				8441A24F214BD3D100173CB1 /* EmployersViewController.swift in Sources */,
 				526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */,
+				8441A251214BD3EB00173CB1 /* EmployersCollectionViewCell.swift in Sources */,
 				52F065AC21451AFA00950E12 /* About.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
 				8484A8BD21426E8B00AA5086 /* ScheduleViewController.swift in Sources */,
 				843A86092146439C003AF278 /* Constants.swift in Sources */,
 				84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */,
 				84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */,
-				84BFAFAA21463125006BC533 /* EmployerViewController.swift in Sources */,
 				8484A8BF21426EA100AA5086 /* ScheduleCollectionViewCell.swift in Sources */,
 				84416F282147DDA000C2E387 /* RegistrationViewController.swift in Sources */,
 				526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */,
+				8441A253214BF07200173CB1 /* MapViewController.swift in Sources */,
 				84BFAFAC214639A8006BC533 /* EmployerDetailsVC.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
 				52F065AE214553B800950E12 /* Employer.swift in Sources */,

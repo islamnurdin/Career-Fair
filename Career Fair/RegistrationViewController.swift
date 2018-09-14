@@ -19,7 +19,6 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Register"
         registerWebView.uiDelegate = self as? WKUIDelegate
         self.registerWebView.addObserver(self, forKeyPath: "URL", options: .new, context: nil)
 

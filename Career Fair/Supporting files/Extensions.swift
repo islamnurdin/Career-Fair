@@ -39,6 +39,7 @@ extension UIImageView {
         self.layer.cornerRadius = self.frame.height / 2
         self.layer.borderColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0).cgColor
         self.layer.borderWidth = 1
+        self.layer.masksToBounds = true
     }
     
     func applyStyleToSelectedView() {

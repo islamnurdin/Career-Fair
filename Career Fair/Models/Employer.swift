@@ -11,4 +11,5 @@ import Foundation
 struct Employer: Decodable {
     let full_name: String
     let description: String
+    let logo_url: String
 }

@@ -33,7 +33,47 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presentVC(id: indexPath.row)
+        print("pressed at \(indexPath.row)")
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
+    }
+    
+    
+    func presentVC(id: Int) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        switch id {
+        case 0:
+            let vc = sb.instantiateViewController(withIdentifier: "ScheduleViewController") as? ScheduleViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
+            break
+        case 1:
+            let vc = sb.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = sb.instantiateViewController(withIdentifier: "EmployersViewController") as! EmployersViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = sb.instantiateViewController(withIdentifier: "EmployersViewController") as! EmployersViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = sb.instantiateViewController(withIdentifier: "OrganizatorsViewController") as! OrganizatorsViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            let vc = sb.instantiateViewController(withIdentifier: "EmployersViewController") as! EmployersViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 6:
+            let vc = sb.instantiateViewController(withIdentifier: "EmployersViewController") as! EmployersViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 7:
+            let vc = sb.instantiateViewController(withIdentifier: "EmployersViewController") as! EmployersViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
     }
 }
