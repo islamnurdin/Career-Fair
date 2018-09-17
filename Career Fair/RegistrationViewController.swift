@@ -18,6 +18,7 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Регистрация"
         
         registerWebView.uiDelegate = self as? WKUIDelegate
         self.registerWebView.addObserver(self, forKeyPath: "URL", options: .new, context: nil)
@@ -52,7 +53,7 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
         print("pressed")
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
-        navigationController?.present(vc!, animated: true)
+        navigationController?.pushViewController(vc!, animated: true)
     }
     
 }

@@ -9,10 +9,6 @@
 import Foundation
 
 struct About: Decodable {
-    let id: Int
     let title: String
     let description: String
-    let target: String
-    let mission: String
-    let task: String
 }

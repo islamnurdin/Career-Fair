@@ -15,6 +15,8 @@
 		526C082F2141B2730081A637 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 526C082E2141B2720081A637 /* Roboto-Regular.ttf */; };
 		526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */; };
 		526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C08322141B6240081A637 /* OrgCollectionViewCell.swift */; };
+		527B52CE214D772100254DF2 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B52CD214D772100254DF2 /* Schedule.swift */; };
+		527B52D0214EC16700254DF2 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B52CF214EC16700254DF2 /* Organizer.swift */; };
 		52F065AC21451AFA00950E12 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F065AB21451AFA00950E12 /* About.swift */; };
 		52F065AE214553B800950E12 /* Employer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F065AD214553B800950E12 /* Employer.swift */; };
 		84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367F8F213FBAC100CBB71B /* CustomUI.swift */; };
@@ -48,6 +50,8 @@
 		526C082E2141B2720081A637 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizatorsViewController.swift; sourceTree = "<group>"; };
 		526C08322141B6240081A637 /* OrgCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCollectionViewCell.swift; sourceTree = "<group>"; };
+		527B52CD214D772100254DF2 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		527B52CF214EC16700254DF2 /* Organizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
 		52F065AB21451AFA00950E12 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		52F065AD214553B800950E12 /* Employer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employer.swift; sourceTree = "<group>"; };
 		84367F8F213FBAC100CBB71B /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			children = (
 				52F065AB21451AFA00950E12 /* About.swift */,
 				52F065AD214553B800950E12 /* Employer.swift */,
+				527B52CD214D772100254DF2 /* Schedule.swift */,
+				527B52CF214EC16700254DF2 /* Organizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				52F065AC21451AFA00950E12 /* About.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
 				8484A8BD21426E8B00AA5086 /* ScheduleViewController.swift in Sources */,
+				527B52D0214EC16700254DF2 /* Organizer.swift in Sources */,
 				843A86092146439C003AF278 /* Constants.swift in Sources */,
 				84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */,
 				84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */,
@@ -321,6 +328,7 @@
 				8441A253214BF07200173CB1 /* MapViewController.swift in Sources */,
 				84BFAFAC214639A8006BC533 /* EmployerDetailsVC.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
+				527B52CE214D772100254DF2 /* Schedule.swift in Sources */,
 				52F065AE214553B800950E12 /* Employer.swift in Sources */,
 				84367F94213FC07600CBB71B /* MainTableViewCell.swift in Sources */,
 			);
