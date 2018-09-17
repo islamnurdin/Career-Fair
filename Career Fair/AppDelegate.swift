@@ -17,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         setupNavigationBar()
-        
+        if !UserDefaults.standard.bool(forKey: "didSee") {
+            UserDefaults.standard.set(true, forKey: "didSee")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController")
+            self.window?.rootViewController = viewController
+            self.window?.makeKeyAndVisible()
+        }
+
         return true
     }
 
@@ -48,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().shadowImage = UIImage()
     }
 }
 

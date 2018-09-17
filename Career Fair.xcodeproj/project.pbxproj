@@ -29,6 +29,19 @@
 		8441A24F214BD3D100173CB1 /* EmployersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441A24E214BD3D100173CB1 /* EmployersViewController.swift */; };
 		8441A251214BD3EB00173CB1 /* EmployersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */; };
 		8441A253214BF07200173CB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441A252214BF07200173CB1 /* MapViewController.swift */; };
+		84771F17214F6F1E00AA37FC /* PartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F16214F6F1E00AA37FC /* PartnersViewController.swift */; };
+		84771F1D214F701900AA37FC /* PartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F1C214F701900AA37FC /* PartnersCollectionViewCell.swift */; };
+		84771F1F214F70E500AA37FC /* Partners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F1E214F70E500AA37FC /* Partners.swift */; };
+		84771F22214F762200AA37FC /* SponsorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F21214F762200AA37FC /* SponsorsCollectionViewCell.swift */; };
+		84771F24214F763400AA37FC /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F23214F763400AA37FC /* SponsorsViewController.swift */; };
+		84771F26214F777700AA37FC /* Sponsors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F25214F777700AA37FC /* Sponsors.swift */; };
+		84771F29214F914A00AA37FC /* ContestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F28214F914A00AA37FC /* ContestsViewController.swift */; };
+		84771F2B214F94D000AA37FC /* ContestFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F2A214F94D000AA37FC /* ContestFormsViewController.swift */; };
+		84771F2E214F9FAA00AA37FC /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F2D214F9FAA00AA37FC /* MapCollectionViewCell.swift */; };
+		84771F31214FA9B000AA37FC /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F30214FA9B000AA37FC /* HTTPRequestManager.swift */; };
+		84771F33214FA9F500AA37FC /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F32214FA9F500AA37FC /* HTTPStatusCode.swift */; };
+		84771F35214FAA1D00AA37FC /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F34214FAA1D00AA37FC /* ServerManager.swift */; };
+		84771F37214FAA4600AA37FC /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84771F36214FAA4600AA37FC /* ErrorMessage.swift */; };
 		8484A8BB21426DEE00AA5086 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8484A8BA21426DEE00AA5086 /* Roboto-Medium.ttf */; };
 		8484A8BD21426E8B00AA5086 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */; };
 		8484A8BF21426EA100AA5086 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */; };
@@ -64,6 +77,19 @@
 		8441A24E214BD3D100173CB1 /* EmployersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersViewController.swift; sourceTree = "<group>"; };
 		8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersCollectionViewCell.swift; sourceTree = "<group>"; };
 		8441A252214BF07200173CB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		84771F16214F6F1E00AA37FC /* PartnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersViewController.swift; sourceTree = "<group>"; };
+		84771F1C214F701900AA37FC /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
+		84771F1E214F70E500AA37FC /* Partners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partners.swift; sourceTree = "<group>"; };
+		84771F21214F762200AA37FC /* SponsorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		84771F23214F763400AA37FC /* SponsorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
+		84771F25214F777700AA37FC /* Sponsors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sponsors.swift; sourceTree = "<group>"; };
+		84771F28214F914A00AA37FC /* ContestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestsViewController.swift; sourceTree = "<group>"; };
+		84771F2A214F94D000AA37FC /* ContestFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestFormsViewController.swift; sourceTree = "<group>"; };
+		84771F2D214F9FAA00AA37FC /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
+		84771F30214FA9B000AA37FC /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		84771F32214FA9F500AA37FC /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		84771F34214FAA1D00AA37FC /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		84771F36214FAA4600AA37FC /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		8484A8BA21426DEE00AA5086 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -114,6 +140,7 @@
 		526C0806213933600081A637 /* Career Fair */ = {
 			isa = PBXGroup;
 			children = (
+				84771F2F214FA9A000AA37FC /* Network */,
 				52F065AA21451AD800950E12 /* Models */,
 				526C082D2141AA440081A637 /* Menu Files */,
 				84367F97213FFC1300CBB71B /* Fonts */,
@@ -131,15 +158,14 @@
 		526C082D2141AA440081A637 /* Menu Files */ = {
 			isa = PBXGroup;
 			children = (
+				84771F2C214F9F8F00AA37FC /* Map */,
+				84771F27214F90EC00AA37FC /* Contests */,
+				84771F20214F74E500AA37FC /* Sponsors */,
+				84771F1A214F6FE700AA37FC /* Employer */,
+				84771F19214F6F9300AA37FC /* Schedule */,
+				84771F18214F6F8000AA37FC /* Organizators */,
+				84771F1B214F700400AA37FC /* Partners */,
 				526C082B2141AA360081A637 /* AboutViewController.swift */,
-				526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */,
-				526C08322141B6240081A637 /* OrgCollectionViewCell.swift */,
-				8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */,
-				8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */,
-				84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */,
-				8441A24E214BD3D100173CB1 /* EmployersViewController.swift */,
-				8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */,
-				8441A252214BF07200173CB1 /* MapViewController.swift */,
 			);
 			path = "Menu Files";
 			sourceTree = "<group>";
@@ -151,6 +177,9 @@
 				52F065AD214553B800950E12 /* Employer.swift */,
 				527B52CD214D772100254DF2 /* Schedule.swift */,
 				527B52CF214EC16700254DF2 /* Organizer.swift */,
+				84771F1E214F70E500AA37FC /* Partners.swift */,
+				84771F25214F777700AA37FC /* Sponsors.swift */,
+				84771F36214FAA4600AA37FC /* ErrorMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +213,80 @@
 				526C082E2141B2720081A637 /* Roboto-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84771F18214F6F8000AA37FC /* Organizators */ = {
+			isa = PBXGroup;
+			children = (
+				526C08322141B6240081A637 /* OrgCollectionViewCell.swift */,
+				526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */,
+			);
+			path = Organizators;
+			sourceTree = "<group>";
+		};
+		84771F19214F6F9300AA37FC /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				8484A8BC21426E8B00AA5086 /* ScheduleViewController.swift */,
+				8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		84771F1A214F6FE700AA37FC /* Employer */ = {
+			isa = PBXGroup;
+			children = (
+				84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */,
+				8441A24E214BD3D100173CB1 /* EmployersViewController.swift */,
+				8441A250214BD3EB00173CB1 /* EmployersCollectionViewCell.swift */,
+			);
+			path = Employer;
+			sourceTree = "<group>";
+		};
+		84771F1B214F700400AA37FC /* Partners */ = {
+			isa = PBXGroup;
+			children = (
+				84771F16214F6F1E00AA37FC /* PartnersViewController.swift */,
+				84771F1C214F701900AA37FC /* PartnersCollectionViewCell.swift */,
+			);
+			path = Partners;
+			sourceTree = "<group>";
+		};
+		84771F20214F74E500AA37FC /* Sponsors */ = {
+			isa = PBXGroup;
+			children = (
+				84771F21214F762200AA37FC /* SponsorsCollectionViewCell.swift */,
+				84771F23214F763400AA37FC /* SponsorsViewController.swift */,
+			);
+			path = Sponsors;
+			sourceTree = "<group>";
+		};
+		84771F27214F90EC00AA37FC /* Contests */ = {
+			isa = PBXGroup;
+			children = (
+				84771F28214F914A00AA37FC /* ContestsViewController.swift */,
+				84771F2A214F94D000AA37FC /* ContestFormsViewController.swift */,
+			);
+			path = Contests;
+			sourceTree = "<group>";
+		};
+		84771F2C214F9F8F00AA37FC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8441A252214BF07200173CB1 /* MapViewController.swift */,
+				84771F2D214F9FAA00AA37FC /* MapCollectionViewCell.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		84771F2F214FA9A000AA37FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84771F30214FA9B000AA37FC /* HTTPRequestManager.swift */,
+				84771F32214FA9F500AA37FC /* HTTPStatusCode.swift */,
+				84771F34214FAA1D00AA37FC /* ServerManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		959EB8E2A0EB7D8534A19479 /* Frameworks */ = {
@@ -311,21 +414,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84771F35214FAA1D00AA37FC /* ServerManager.swift in Sources */,
+				84771F24214F763400AA37FC /* SponsorsViewController.swift in Sources */,
 				526C082C2141AA360081A637 /* AboutViewController.swift in Sources */,
 				8441A24F214BD3D100173CB1 /* EmployersViewController.swift in Sources */,
+				84771F2E214F9FAA00AA37FC /* MapCollectionViewCell.swift in Sources */,
+				84771F22214F762200AA37FC /* SponsorsCollectionViewCell.swift in Sources */,
+				84771F31214FA9B000AA37FC /* HTTPRequestManager.swift in Sources */,
 				526C08312141B5CF0081A637 /* OrganizatorsViewController.swift in Sources */,
+				84771F29214F914A00AA37FC /* ContestsViewController.swift in Sources */,
 				8441A251214BD3EB00173CB1 /* EmployersCollectionViewCell.swift in Sources */,
 				52F065AC21451AFA00950E12 /* About.swift in Sources */,
 				526C081E21394CB00081A637 /* Extensions.swift in Sources */,
 				8484A8BD21426E8B00AA5086 /* ScheduleViewController.swift in Sources */,
+				84771F37214FAA4600AA37FC /* ErrorMessage.swift in Sources */,
+				84771F2B214F94D000AA37FC /* ContestFormsViewController.swift in Sources */,
 				527B52D0214EC16700254DF2 /* Organizer.swift in Sources */,
 				843A86092146439C003AF278 /* Constants.swift in Sources */,
 				84367F90213FBAC100CBB71B /* CustomUI.swift in Sources */,
 				84367F96213FEA7200CBB71B /* MainViewController.swift in Sources */,
 				8484A8BF21426EA100AA5086 /* ScheduleCollectionViewCell.swift in Sources */,
+				84771F26214F777700AA37FC /* Sponsors.swift in Sources */,
+				84771F1F214F70E500AA37FC /* Partners.swift in Sources */,
+				84771F17214F6F1E00AA37FC /* PartnersViewController.swift in Sources */,
 				84416F282147DDA000C2E387 /* RegistrationViewController.swift in Sources */,
+				84771F33214FA9F500AA37FC /* HTTPStatusCode.swift in Sources */,
 				526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */,
 				8441A253214BF07200173CB1 /* MapViewController.swift in Sources */,
+				84771F1D214F701900AA37FC /* PartnersCollectionViewCell.swift in Sources */,
 				84BFAFAC214639A8006BC533 /* EmployerDetailsVC.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
 				527B52CE214D772100254DF2 /* Schedule.swift in Sources */,

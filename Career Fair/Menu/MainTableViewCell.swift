@@ -30,10 +30,10 @@ class MainTableViewCell: UITableViewCell {
     
     func fillMain(index: Int) {
         if index % 2 == 0 {
-            mainViewLeftConstraint.constant = frame.size.width - mainView.frame.size.width + 35
+            mainViewLeftConstraint.constant = frame.size.width - mainView.frame.size.width + 15
             
         } else {
-            mainViewLeftConstraint.constant = -30
+            mainViewLeftConstraint.constant = -10
         }
     }
 }

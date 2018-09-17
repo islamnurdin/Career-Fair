@@ -48,12 +48,4 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
         }
     }
     
-    
-    @IBAction func registered(_ sender: Any) {
-        print("pressed")
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
-        navigationController?.pushViewController(vc!, animated: true)
-    }
-    
 }

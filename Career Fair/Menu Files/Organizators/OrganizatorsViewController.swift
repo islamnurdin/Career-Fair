@@ -18,13 +18,15 @@ class OrganizatorsViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getScheduleData {
+        navigationItem.title = "Организаторы"
+        
+        getOrganizerData {
             self.collVIew.reloadData()
         }
 
     }
     
-    func getScheduleData(completed: @escaping () -> ()) {
+    func getOrganizerData(completed: @escaping () -> ()) {
         let url = URL(string: "http://138.68.86.126/organizer")
         Alamofire.request(url!).responseJSON { response in
             let data = response.data
@@ -60,5 +62,6 @@ extension OrganizatorsViewController: UICollectionViewDelegate, UICollectionView
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLabel.text = organizer[indexPath.row].description
+        
     }
 }

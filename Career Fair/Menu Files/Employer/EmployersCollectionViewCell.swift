@@ -11,6 +11,7 @@ import UIKit
 class EmployersCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var companyImage: UIImageView!
+    
     @IBOutlet weak var companyName: UILabel!
     @IBOutlet weak var companyDescrp: UILabel!
     

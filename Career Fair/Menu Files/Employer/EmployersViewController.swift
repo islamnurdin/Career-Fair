@@ -74,3 +74,10 @@ extension EmployersViewController: UICollectionViewDelegate, UICollectionViewDat
         }
     }
 }
+
+extension EmployersViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width, height: 100)
+    }
+}

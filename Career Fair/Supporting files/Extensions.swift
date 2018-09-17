@@ -42,6 +42,13 @@ extension UIImageView {
         self.layer.masksToBounds = true
     }
     
+    func addShadowBottom() {
+        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.layer.shadowOpacity = 0.6
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowColor = UIColor.red.cgColor
+    }
+    
     func applyStyleToSelectedView() {
         self.layer.shadowColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0).cgColor
         self.layer.shadowOffset = CGSize(width: 2.0, height: 4.0)
@@ -90,5 +97,18 @@ extension UIColor {
     
     convenience init(hex: Int) {
         self.init(red:(hex >> 16) & 0xff, green:(hex >> 8) & 0xff, blue:hex & 0xff)
+    }
+}
+
+extension UIViewController {
+    
+    func presentViewController(vc: String, sb: String) {
+        let sb = UIStoryboard(name: sb, bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: vc)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func deleteBackButtonTitle() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 }
