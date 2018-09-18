@@ -218,8 +218,8 @@
 		84771F18214F6F8000AA37FC /* Organizators */ = {
 			isa = PBXGroup;
 			children = (
-				526C08322141B6240081A637 /* OrgCollectionViewCell.swift */,
 				526C08302141B5CF0081A637 /* OrganizatorsViewController.swift */,
+				526C08322141B6240081A637 /* OrgCollectionViewCell.swift */,
 			);
 			path = Organizators;
 			sourceTree = "<group>";
@@ -255,8 +255,8 @@
 		84771F20214F74E500AA37FC /* Sponsors */ = {
 			isa = PBXGroup;
 			children = (
-				84771F21214F762200AA37FC /* SponsorsCollectionViewCell.swift */,
 				84771F23214F763400AA37FC /* SponsorsViewController.swift */,
+				84771F21214F762200AA37FC /* SponsorsCollectionViewCell.swift */,
 			);
 			path = Sponsors;
 			sourceTree = "<group>";
@@ -581,11 +581,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TFCN47U548;
+				DEVELOPMENT_TEAM = U5DCDBG2W2;
 				INFOPLIST_FILE = "Career Fair/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mmbook.Career-Fair";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neobis.career-fair";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,11 +598,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TFCN47U548;
+				DEVELOPMENT_TEAM = U5DCDBG2W2;
 				INFOPLIST_FILE = "Career Fair/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mmbook.Career-Fair";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neobis.career-fair";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

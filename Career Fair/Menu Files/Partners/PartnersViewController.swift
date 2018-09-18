@@ -62,6 +62,10 @@ extension PartnersViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLabel.text = partners[indexPath.row].description
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? PartnersCollectionViewCell {
+            cell.image.addShadowBottom()
+        }
     }
 }
 

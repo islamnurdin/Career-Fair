@@ -43,10 +43,11 @@ extension UIImageView {
     }
     
     func addShadowBottom() {
-        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.layer.shadowOffset = CGSize(width: 0, height: 5)
         self.layer.shadowOpacity = 0.6
         self.layer.shadowRadius = 3.0
-        self.layer.shadowColor = UIColor.red.cgColor
+        self.layer.shadowColor = Colors.yellow.cgColor
+        
     }
     
     func applyStyleToSelectedView() {

@@ -63,5 +63,8 @@ extension OrganizatorsViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLabel.text = organizer[indexPath.row].description
         
+        if let cell = collectionView.cellForItem(at: indexPath) as? OrgCollectionViewCell {
+            cell.image.addShadowBottom()
+        }
     }
 }

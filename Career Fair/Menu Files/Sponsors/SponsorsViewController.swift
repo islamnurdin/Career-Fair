@@ -60,6 +60,9 @@ extension SponsorsViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLable.text = sponsors[indexPath.row].description
+        if let cell = collectionView.cellForItem(at: indexPath) as? SponsorsCollectionViewCell {
+            cell.image.addShadowBottom()
+        }
     }
 }
 
