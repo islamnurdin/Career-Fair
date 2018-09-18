@@ -24,9 +24,10 @@ class ScheduleViewController: UIViewController {
     }
 
     func getScheduleData(completed: @escaping () -> ()) {
-        let url = URL(string: "http://138.68.86.126/schedule/")
+        let url = URL(string: "http://138.68.86.126/shedule/")
         Alamofire.request(url!).responseJSON { response in
             let data = response.data
+            print(response.result)
             do {
                 self.schedule = try JSONDecoder().decode([Schedule].self, from: data!)
                 DispatchQueue.main.async {
@@ -48,12 +49,14 @@ extension ScheduleViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "scheduleCell", for: indexPath) as! ScheduleCollectionViewCell
+    
+        let startTime = schedule[indexPath.row].start.prefix(5)
+        let endTime = schedule[indexPath.row].end.prefix(5)
         
-        cell.time.text = schedule[indexPath.row].time
+        cell.time.text = String(startTime)
         cell.theme.text = schedule[indexPath.row].subject
-        cell.speaker.text = schedule[indexPath.row].speaker
+        cell.speaker.text = String(endTime)
         cell.location.text = schedule[indexPath.row].place
-
         
         return cell
     }

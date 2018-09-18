@@ -9,8 +9,8 @@
 import Foundation
 
 struct Schedule: Decodable {
-    let time: String
+    let start: String
+    let end: String
     let subject: String
-    let speaker: String
     let place: String
 }
