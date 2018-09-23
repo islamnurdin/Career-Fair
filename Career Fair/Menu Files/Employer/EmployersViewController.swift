@@ -42,7 +42,6 @@ class EmployersViewController: UIViewController {
             }
         }
     }
-
 }
 
 extension EmployersViewController: UICollectionViewDelegate, UICollectionViewDataSource {

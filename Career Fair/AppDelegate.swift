@@ -17,16 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         setupNavigationBar()
-        if !UserDefaults.standard.bool(forKey: "didSee") {
-            UserDefaults.standard.set(true, forKey: "didSee")
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController")
-            self.window?.rootViewController = viewController
-            self.window?.makeKeyAndVisible()
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let firstVC = sb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        if let navigationController = self.window?.rootViewController as? UINavigationController
+        {
+            navigationController.pushViewController(firstVC, animated: true)
+            firstVC.deleteBackButtonTitle()
         }
-
         return true
+//        let defaults = UserDefaults.standard
+//        if defaults.object(forKey: "saw") == nil {
+//            defaults.set("No", forKey:"saw")
+//            defaults.synchronize()
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//            self.window?.rootViewController? = viewController
+//            self.window?.makeKeyAndVisible()
+//        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

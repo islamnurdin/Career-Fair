@@ -11,6 +11,11 @@ import UIKit
 class PartnersCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var name: UILabel!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        image.reloadView()
+    }
 }
 

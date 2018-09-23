@@ -20,7 +20,7 @@ class PartnersViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Партнеры и Медиа-партнеры"
-
+        
         getPartnersData {
             self.collView.reloadData()
         }
@@ -52,19 +52,31 @@ extension PartnersViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "partnersCell", for: indexPath) as! PartnersCollectionViewCell
         
+        cell.name.text = partners[indexPath.row].full_name
         let urlString = partners[indexPath.row].logo_url
         let url = URL(string: urlString)
         
         cell.image.downloadedFrom(url: url!)
         cell.image.applyStylesToImage()
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLabel.text = partners[indexPath.row].description
         
-        if let cell = collectionView.cellForItem(at: indexPath) as? PartnersCollectionViewCell {
-            cell.image.addShadowBottom()
+        if let cell = self.collView.cellForItem(at: indexPath) as? PartnersCollectionViewCell {
+            UICollectionViewCell.animate(withDuration: 1, animations: {
+                cell.image.reloadView()
+            })
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = self.collView.cellForItem(at: indexPath) as? PartnersCollectionViewCell {
+            UICollectionViewCell.animate(withDuration: 1, animations: {
+                cell.image.reloadView()
+            })
         }
     }
 }

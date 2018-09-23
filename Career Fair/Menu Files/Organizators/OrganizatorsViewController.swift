@@ -52,6 +52,7 @@ extension OrganizatorsViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "organizatorsCell", for: indexPath) as! OrgCollectionViewCell
     
+        cell.name.text = organizer[indexPath.row].full_name
         let urlString = organizer[indexPath.row].logo_url
         let url = URL(string: urlString)
         
@@ -63,8 +64,18 @@ extension OrganizatorsViewController: UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLabel.text = organizer[indexPath.row].description
         
-        if let cell = collectionView.cellForItem(at: indexPath) as? OrgCollectionViewCell {
-            cell.image.addShadowBottom()
+        if let cell = self.collVIew.cellForItem(at: indexPath) as? OrgCollectionViewCell {
+            UICollectionViewCell.animate(withDuration: 1, animations: {
+                cell.image.reloadView()
+            })
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = self.collVIew.cellForItem(at: indexPath) as? OrgCollectionViewCell {
+            UICollectionViewCell.animate(withDuration: 1, animations: {
+                cell.image.reloadView()
+            })
         }
     }
 }

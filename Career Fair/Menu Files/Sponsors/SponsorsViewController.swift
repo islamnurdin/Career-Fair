@@ -50,6 +50,7 @@ extension SponsorsViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sponsorsCell", for: indexPath) as! SponsorsCollectionViewCell
         
+        cell.name.text = sponsors[indexPath.row].full_name
         let urlString = sponsors[indexPath.row].logo_url
         let url = URL(string: urlString)
         
@@ -57,11 +58,21 @@ extension SponsorsViewController: UICollectionViewDelegate, UICollectionViewData
         cell.image.applyStylesToImage()
         return cell
     }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         detailLable.text = sponsors[indexPath.row].description
-        if let cell = collectionView.cellForItem(at: indexPath) as? SponsorsCollectionViewCell {
-            cell.image.addShadowBottom()
+        
+        if let cell = self.collView.cellForItem(at: indexPath) as? SponsorsCollectionViewCell {
+            UICollectionViewCell.animate(withDuration: 1, animations: {
+                cell.image.reloadView()
+            })
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = self.collView.cellForItem(at: indexPath) as? SponsorsCollectionViewCell {
+            UICollectionViewCell.animate(withDuration: 1, animations: {
+                cell.image.reloadView()
+            })
         }
     }
 }

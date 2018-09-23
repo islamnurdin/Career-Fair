@@ -42,20 +42,6 @@ extension UIImageView {
         self.layer.masksToBounds = true
     }
     
-    func addShadowBottom() {
-        self.layer.shadowOffset = CGSize(width: 0, height: 5)
-        self.layer.shadowOpacity = 0.6
-        self.layer.shadowRadius = 3.0
-        self.layer.shadowColor = Colors.yellow.cgColor
-        
-    }
-    
-    func applyStyleToSelectedView() {
-        self.layer.shadowColor = UIColor(red:0.90, green:0.90, blue:0.90, alpha:1.0).cgColor
-        self.layer.shadowOffset = CGSize(width: 2.0, height: 4.0)
-        self.layer.shadowOpacity = 1
-        self.layer.shadowRadius = 10
-    }
     func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -74,15 +60,17 @@ extension UIImageView {
         guard let url = URL(string: link) else { return }
         downloadedFrom(url: url, contentMode: mode)
     }
-}
-
-extension UITableViewCell {
     
-    func applyStyleViewCell() {
-        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 7.0)
-        self.layer.shadowOpacity = 1
-        self.layer.shadowRadius = 7
+    func reloadView() {
+        if isHighlighted{
+            self.layer.borderWidth = 2
+            self.layer.borderColor = Colors.yellow.cgColor
+
+        }
+        else {
+            self.layer.borderWidth = 1
+            self.layer.borderColor = Colors.gray.cgColor
+        }
     }
 }
 

@@ -8,8 +8,12 @@
 
 import Foundation
 
-struct Employer: Decodable {
+struct Employer: Codable {
+    let floor: Int
     let full_name: String
     let description: String
     let logo_url: String
+
 }
+
+

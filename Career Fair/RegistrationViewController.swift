@@ -13,8 +13,6 @@ class RegistrationViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var doneButton: UIToolbar!
     @IBOutlet weak var registerWebView: WKWebView!
-    @IBOutlet weak var navbar: UINavigationBar!
-    @IBOutlet weak var titlee: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
