@@ -31,6 +31,7 @@ struct MainMenu {
                        ViewController(title: "Партнеры и Медиа-партнеры", storyboard: "Main", identifier: "PartnersViewController"),
                        ViewController(title: "Спонсоры", storyboard: "Main", identifier: "SponsorsViewController"),
                        ViewController(title: "Опросы", storyboard: "Main", identifier: "SurveyViewController"),
+                       ViewController(title: "О хакатоне", storyboard: "Main", identifier: "AboutHackathonViewController"),
                        ViewController(title: "О приложении", storyboard: "Main", identifier: "AboutAppViewController")]
 }
 
