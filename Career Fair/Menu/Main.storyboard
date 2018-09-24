@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tf2-5E-8cw">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tf2-5E-8cw">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -30,18 +30,18 @@
             <objects>
                 <viewController storyboardIdentifier="RegistrationViewController" id="8is-Qn-Sx8" customClass="RegistrationViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pZL-Pa-ZG7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-ba-8aB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO" suppressesIncrementalRendering="YES">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-Mk-Eoo">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <color key="backgroundColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="par-2Y-zAQ"/>
@@ -84,30 +84,30 @@
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="1E1-CQ-2T2" customClass="MainViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jW-ce-lU3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-gb-qME">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="cEx-pI-4Zy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-CQ-e55">
-                                            <rect key="frame" x="68.5" y="11" width="238.5" height="48"/>
+                                            <rect key="frame" x="70" y="11" width="235.5" height="48"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ярмаркe Карьеры" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-dy-aNU">
-                                                    <rect key="frame" x="46" y="12" width="146.5" height="24"/>
+                                                    <rect key="frame" x="44.5" y="12" width="145" height="24"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-SN-Emt">
-                                                    <rect key="frame" x="200.5" y="12" width="14" height="24"/>
+                                                    <rect key="frame" x="197.5" y="12" width="14" height="24"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsn-1c-9w0">
-                                                    <rect key="frame" x="24" y="12" width="14" height="24"/>
+                                                    <rect key="frame" x="24" y="12" width="12.5" height="24"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="18"/>
                                                     <color key="textColor" red="0.96508419697115366" green="0.99795076045860198" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -136,10 +136,10 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainTableViewCell" rowHeight="122" id="oUd-cf-cyz" customClass="MainTableViewCell" customModule="Career_Fair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="98" width="375" height="122"/>
+                                        <rect key="frame" x="0.0" y="98" width="320" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oUd-cf-cyz" id="dzP-3m-61c">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-yE-NQX" customClass="CustomView" customModule="Career_Fair" customModuleProvider="target">
@@ -226,7 +226,7 @@
             <objects>
                 <navigationController id="GDF-dA-YEy" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xLK-Vi-F1l">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -242,11 +242,11 @@
             <objects>
                 <viewController storyboardIdentifier="EmployersViewController" id="FeS-lL-fbn" customClass="EmployersViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="54e-ys-GQ8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-Y2-GBX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vyq-yL-J0T">
                                     <size key="itemSize" width="394.5" height="124"/>
@@ -256,7 +256,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmployersViewController" id="nna-M4-fRy" customClass="EmployersCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
-                                        <rect key="frame" x="-10" y="0.0" width="394.5" height="124"/>
+                                        <rect key="frame" x="-37.5" y="0.0" width="394.5" height="124"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="394.5" height="124"/>
@@ -380,7 +380,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-dc-8Iz">
-                                                <rect key="frame" x="118" y="40" width="272" height="21"/>
+                                                <rect key="frame" x="118" y="40" width="272" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -452,20 +452,23 @@
             <objects>
                 <viewController storyboardIdentifier="AboutViewController" id="1qb-2H-6XD" customClass="AboutViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WS2-ux-MgQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Stq-Yf-1OT">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CoL-SW-et8">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="career-fair-logo" translatesAutoresizingMaskIntoConstraints="NO" id="wTh-0q-Bra">
-                                                <rect key="frame" x="8" y="8" width="359" height="198"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_logo" translatesAutoresizingMaskIntoConstraints="NO" id="wTh-0q-Bra">
+                                                <rect key="frame" x="8" y="8" width="304" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="b3r-7l-MWN"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-UR-I5j">
-                                                <rect key="frame" x="8" y="222" width="359" height="20"/>
+                                                <rect key="frame" x="8" y="224" width="304" height="20"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -514,11 +517,11 @@
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="MG2-vj-Bah" customClass="MapViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2yw-3R-72b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JrN-Qx-RfA">
-                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VHD-Ir-PFc"/>
@@ -531,7 +534,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCollectionViewCell" id="mES-tD-LwX" customClass="MapCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="45"/>
+                                        <rect key="frame" x="82" y="0.0" width="156" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="156" height="45"/>
@@ -561,10 +564,10 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYx-ma-0Iq">
-                                <rect key="frame" x="0.0" y="50" width="375" height="5"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2a7-CE-nBL">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -578,10 +581,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsd-mR-5sl">
-                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="518"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floor1" translatesAutoresizingMaskIntoConstraints="NO" id="au4-T6-T0f">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -660,7 +663,7 @@
                                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="uO7-Lg-P1Q">
                                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TP-mK-xSD">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TP-mK-xSD">
                                                                     <rect key="frame" x="0.0" y="88" width="89" height="29"/>
                                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                                                     <nil key="textColor"/>
@@ -690,9 +693,13 @@
                                                     <outlet property="delegate" destination="CmZ-pq-C23" id="eee-xJ-7Ih"/>
                                                 </connections>
                                             </collectionView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="-" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-ij-f3Y">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-ij-f3Y">
                                                 <rect key="frame" x="4" y="183" width="366" height="475"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Центр Карьеры и Кураторства Американского Университета в Центральной Азии 
+ул. Аалы Токомбаева, 7/6 
+341 кабинет (3 этаж)  
+Тел: +996 312 915 000, дополнительный 417, 418</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -755,11 +762,11 @@
             <objects>
                 <viewController storyboardIdentifier="ScheduleViewController" id="BFc-48-Y6E" customClass="ScheduleViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YeF-Dh-6r5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KV6-J2-r5E">
-                                <rect key="frame" x="0.0" y="59" width="375" height="608"/>
+                                <rect key="frame" x="0.0" y="59" width="320" height="509"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2lf-4c-f9z">
                                     <size key="itemSize" width="413" height="136"/>
@@ -769,7 +776,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="scheduleCell" id="zKh-SN-ebs" customClass="ScheduleCollectionViewCell" customModule="Career_Fair" customModuleProvider="target">
-                                        <rect key="frame" x="-19" y="0.0" width="413" height="136"/>
+                                        <rect key="frame" x="-46.5" y="0.0" width="413" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="136"/>
@@ -792,7 +799,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljn-mf-hfn">
-                                                    <rect key="frame" x="298" y="41" width="67" height="29"/>
+                                                    <rect key="frame" x="298" y="41" width="67" height="28.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="67" id="og0-Bv-Lrc"/>
                                                     </constraints>
@@ -807,7 +814,7 @@
                                                     <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKB-mk-2n5">
-                                                    <rect key="frame" x="53" y="81" width="46" height="22"/>
+                                                    <rect key="frame" x="53" y="81.5" width="46" height="21.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="46" id="7mJ-2b-85c"/>
                                                     </constraints>
@@ -862,7 +869,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Место" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gr-Di-RH4">
-                                <rect key="frame" x="282" y="37" width="39" height="16"/>
+                                <rect key="frame" x="227" y="37" width="39" height="16"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
                                 <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -896,34 +903,37 @@
             <objects>
                 <viewController storyboardIdentifier="ContestsViewController" id="Wus-Bm-tUn" customClass="ContestsViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yol-UG-ot9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Самое лучшее Мок-интервью”" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFy-Nk-Al7">
-                                <rect key="frame" x="16" y="123" width="343" height="20"/>
+                                <rect key="frame" x="16" y="70" width="288" height="20"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“Самое лучшее CV”" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJf-Y6-mmu">
-                                <rect key="frame" x="16" y="334" width="343" height="20"/>
+                                <rect key="frame" x="16" y="196" width="288" height="20"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj5-TG-tsa">
-                                <rect key="frame" x="64" y="153" width="246" height="2"/>
+                                <rect key="frame" x="24" y="98" width="272" height="2"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="VOW-5E-5bx"/>
+                                    <constraint firstAttribute="height" constant="2" id="Dsb-y9-juq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-G5-u7c">
-                                <rect key="frame" x="64" y="363" width="246" height="2"/>
+                                <rect key="frame" x="24" y="224" width="272" height="2"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="3vu-x3-4sN"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-CY-VZ2">
-                                <rect key="frame" x="94" y="170" width="190" height="30"/>
+                                <rect key="frame" x="48" y="116" width="224" height="30"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Участвовать">
                                     <color key="titleColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -933,7 +943,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTC-OZ-L6v">
-                                <rect key="frame" x="94" y="381" width="190" height="30"/>
+                                <rect key="frame" x="48" y="242" width="224" height="30"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Участвовать">
                                     <color key="titleColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -942,37 +952,190 @@
                                     <action selector="takePartCV:" destination="Wus-Bm-tUn" eventType="touchUpInside" id="TMb-cL-fFg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyN-OL-pbx">
+                                <rect key="frame" x="48" y="368" width="224" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Участвовать">
+                                    <color key="titleColor" red="0.1215686275" green="0.18823529410000001" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutFest:" destination="Wus-Bm-tUn" eventType="touchUpInside" id="9MT-Ca-qP0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3m-2F-Dni">
+                                <rect key="frame" x="24" y="350" width="272" height="2"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.87843137250000003" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="5Tq-OX-9ve"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“О Фестивале”" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLY-Tv-N96">
+                                <rect key="frame" x="16" y="322" width="288" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sFy-Nk-Al7" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="16" id="1D8-Ou-IeK"/>
-                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="leading" secondItem="qgQ-G5-u7c" secondAttribute="leading" id="6Ju-IF-ufY"/>
-                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="top" secondItem="Rj5-TG-tsa" secondAttribute="bottom" constant="15" id="A1L-ZC-umd"/>
-                            <constraint firstItem="XTC-OZ-L6v" firstAttribute="top" secondItem="qgQ-G5-u7c" secondAttribute="bottom" constant="16" id="A6a-VU-xrQ"/>
-                            <constraint firstAttribute="bottom" secondItem="vJf-Y6-mmu" secondAttribute="bottom" constant="313" id="DBY-zl-aDc"/>
-                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="sFy-Nk-Al7" secondAttribute="trailing" constant="16" id="Df5-YG-p0M"/>
-                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="top" secondItem="sFy-Nk-Al7" secondAttribute="bottom" constant="10" id="Dxm-Xz-Dxc"/>
-                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="94" id="GtK-93-dCl"/>
-                            <constraint firstItem="vJf-Y6-mmu" firstAttribute="leading" secondItem="sFy-Nk-Al7" secondAttribute="leading" id="JtJ-1z-3yY"/>
-                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="top" secondItem="Rj5-TG-tsa" secondAttribute="bottom" constant="15" id="TYu-XI-oZb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rj5-TG-tsa" secondAttribute="trailing" constant="49" id="Vce-SN-Tst"/>
-                            <constraint firstItem="sFy-Nk-Al7" firstAttribute="top" secondItem="C8G-EW-7aq" secondAttribute="top" constant="103" id="Wwb-eI-3Fv"/>
-                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="top" secondItem="Yol-UG-ot9" secondAttribute="top" constant="170" id="cJ6-3B-b2N"/>
-                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="leading" secondItem="XTC-OZ-L6v" secondAttribute="leading" id="fWq-Ne-KZg"/>
-                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="trailing" secondItem="XTC-OZ-L6v" secondAttribute="trailing" id="gpN-bD-Jn1"/>
-                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="leading" secondItem="Yol-UG-ot9" secondAttribute="leadingMargin" constant="48" id="ji1-eL-6Fh"/>
-                            <constraint firstAttribute="bottom" secondItem="qgQ-G5-u7c" secondAttribute="bottom" constant="302" id="k0R-z0-PG9"/>
-                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="centerX" secondItem="vJf-Y6-mmu" secondAttribute="centerX" id="mi7-Ty-kIX"/>
-                            <constraint firstItem="qgQ-G5-u7c" firstAttribute="top" secondItem="vJf-Y6-mmu" secondAttribute="bottom" constant="9" id="p4a-Kq-5mB"/>
-                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="g6b-CY-VZ2" secondAttribute="trailing" constant="91" id="tF3-xp-v7r"/>
-                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="trailing" secondItem="qgQ-G5-u7c" secondAttribute="trailing" id="zWt-5z-ov7"/>
+                            <constraint firstAttribute="trailing" secondItem="Rj5-TG-tsa" secondAttribute="trailing" constant="24" id="03m-VG-oEM"/>
+                            <constraint firstItem="hyN-OL-pbx" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="48" id="0f6-Tg-9EU"/>
+                            <constraint firstItem="vJf-Y6-mmu" firstAttribute="top" secondItem="g6b-CY-VZ2" secondAttribute="bottom" constant="50" id="0wr-bh-2ZL"/>
+                            <constraint firstItem="W3m-2F-Dni" firstAttribute="leading" secondItem="Yol-UG-ot9" secondAttribute="leading" constant="24" id="2Aq-xO-aBl"/>
+                            <constraint firstAttribute="trailing" secondItem="qgQ-G5-u7c" secondAttribute="trailing" constant="24" id="6IE-Cs-MTx"/>
+                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="XTC-OZ-L6v" secondAttribute="trailing" constant="48" id="8Gl-Jy-17x"/>
+                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="hyN-OL-pbx" secondAttribute="trailing" constant="48" id="Ah8-sZ-8xX"/>
+                            <constraint firstItem="vJf-Y6-mmu" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="16" id="CPg-0p-tHG"/>
+                            <constraint firstItem="sFy-Nk-Al7" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="16" id="CiZ-rd-eh4"/>
+                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="48" id="Gt5-b6-UMN"/>
+                            <constraint firstAttribute="trailing" secondItem="W3m-2F-Dni" secondAttribute="trailing" constant="24" id="HSE-WM-jrn"/>
+                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="top" secondItem="sFy-Nk-Al7" secondAttribute="bottom" constant="8" id="Hod-R3-4ob"/>
+                            <constraint firstItem="OLY-Tv-N96" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="16" id="OgJ-QX-Rx7"/>
+                            <constraint firstItem="XTC-OZ-L6v" firstAttribute="top" secondItem="qgQ-G5-u7c" secondAttribute="bottom" constant="16" id="RkR-11-cfp"/>
+                            <constraint firstItem="OLY-Tv-N96" firstAttribute="top" secondItem="XTC-OZ-L6v" secondAttribute="bottom" constant="50" id="S2M-s8-w2y"/>
+                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="sFy-Nk-Al7" secondAttribute="trailing" constant="16" id="bRh-Hq-U4N"/>
+                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="OLY-Tv-N96" secondAttribute="trailing" constant="16" id="eMc-Mq-lFm"/>
+                            <constraint firstItem="XTC-OZ-L6v" firstAttribute="leading" secondItem="C8G-EW-7aq" secondAttribute="leading" constant="48" id="kRu-C5-ykB"/>
+                            <constraint firstItem="g6b-CY-VZ2" firstAttribute="top" secondItem="Rj5-TG-tsa" secondAttribute="bottom" constant="16" id="nvu-Bj-7QN"/>
+                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="g6b-CY-VZ2" secondAttribute="trailing" constant="48" id="ojg-gZ-6dL"/>
+                            <constraint firstItem="C8G-EW-7aq" firstAttribute="trailing" secondItem="vJf-Y6-mmu" secondAttribute="trailing" constant="16" id="qeg-km-exP"/>
+                            <constraint firstItem="qgQ-G5-u7c" firstAttribute="leading" secondItem="Yol-UG-ot9" secondAttribute="leading" constant="24" id="u6k-ZU-4ff"/>
+                            <constraint firstItem="hyN-OL-pbx" firstAttribute="top" secondItem="W3m-2F-Dni" secondAttribute="bottom" constant="16" id="upo-M7-0oR"/>
+                            <constraint firstItem="Rj5-TG-tsa" firstAttribute="leading" secondItem="Yol-UG-ot9" secondAttribute="leading" constant="24" id="xLl-hj-Xjb"/>
+                            <constraint firstItem="W3m-2F-Dni" firstAttribute="top" secondItem="OLY-Tv-N96" secondAttribute="bottom" constant="8" id="xkO-eU-ffL"/>
+                            <constraint firstItem="sFy-Nk-Al7" firstAttribute="top" secondItem="C8G-EW-7aq" secondAttribute="top" constant="50" id="yGQ-Fz-nhB"/>
+                            <constraint firstItem="qgQ-G5-u7c" firstAttribute="top" secondItem="vJf-Y6-mmu" secondAttribute="bottom" constant="8" id="z31-se-tqf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C8G-EW-7aq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyj-w0-5yD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3680.8000000000002" y="127.28635682158921"/>
+            <point key="canvasLocation" x="3680.625" y="126.7605633802817"/>
+        </scene>
+        <!--Survey View Controller-->
+        <scene sceneID="HVA-13-ZEj">
+            <objects>
+                <viewController storyboardIdentifier="SurveyViewController" id="wZC-bQ-SWr" customClass="SurveyViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8tI-uS-gg5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Примите участие в наших опросах:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwC-C0-t9Y">
+                                <rect key="frame" x="12" y="120" width="296" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjV-4l-m3x">
+                                <rect key="frame" x="12" y="240" width="296" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-bp-J1a">
+                                        <rect key="frame" x="214" y="8" width="70" height="31"/>
+                                        <color key="backgroundColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="hdm-cx-XUr"/>
+                                        </constraints>
+                                        <state key="normal" title="Перейти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstSurveyPressed:" destination="wZC-bQ-SWr" eventType="touchUpInside" id="Weq-wF-JNP"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOM-dn-hxm">
+                                        <rect key="frame" x="12" y="8" width="11" height="31"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="R85-IL-zqu"/>
+                                            <constraint firstAttribute="width" constant="11" id="ZLB-XF-ptw"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тенденции карьеры" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ai8-rn-cBw">
+                                        <rect key="frame" x="35" y="8" width="155" height="31"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6o6-bp-J1a" secondAttribute="trailing" constant="12" id="2pH-ha-o7t"/>
+                                    <constraint firstItem="FOM-dn-hxm" firstAttribute="top" secondItem="kjV-4l-m3x" secondAttribute="top" constant="8" id="6xb-7o-Mrf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ai8-rn-cBw" secondAttribute="bottom" constant="8" id="AOd-JW-cnw"/>
+                                    <constraint firstItem="Ai8-rn-cBw" firstAttribute="top" secondItem="kjV-4l-m3x" secondAttribute="top" constant="8" id="Caf-Us-9TJ"/>
+                                    <constraint firstItem="6o6-bp-J1a" firstAttribute="leading" secondItem="Ai8-rn-cBw" secondAttribute="trailing" constant="24" id="Lpv-G0-y2e"/>
+                                    <constraint firstItem="Ai8-rn-cBw" firstAttribute="leading" secondItem="FOM-dn-hxm" secondAttribute="trailing" constant="12" id="QET-gY-Om3"/>
+                                    <constraint firstItem="6o6-bp-J1a" firstAttribute="top" secondItem="kjV-4l-m3x" secondAttribute="top" constant="8" id="Zbv-sh-DMZ"/>
+                                    <constraint firstItem="FOM-dn-hxm" firstAttribute="leading" secondItem="kjV-4l-m3x" secondAttribute="leading" constant="12" id="fDk-x5-yXO"/>
+                                    <constraint firstAttribute="bottom" secondItem="FOM-dn-hxm" secondAttribute="bottom" constant="8" id="kvd-yO-1ux"/>
+                                    <constraint firstAttribute="bottom" secondItem="6o6-bp-J1a" secondAttribute="bottom" constant="8" id="yXw-Pb-n8s"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94o-wQ-4uw">
+                                <rect key="frame" x="12" y="311" width="296" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng0-A5-Xhx">
+                                        <rect key="frame" x="214" y="8" width="70" height="31"/>
+                                        <color key="backgroundColor" red="0.1565296991152193" green="0.25041754153214735" blue="0.42050439119338989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="n7Y-p1-Rsa"/>
+                                        </constraints>
+                                        <state key="normal" title="Перейти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondSurveyPressed:" destination="wZC-bQ-SWr" eventType="touchUpInside" id="Vc0-KQ-y6B"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qk1-yt-5UE">
+                                        <rect key="frame" x="12" y="8" width="11" height="31"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="Cpc-Hy-iaW"/>
+                                            <constraint firstAttribute="width" constant="11" id="Lfz-pg-tNa"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопросы генеральных директоров" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7a-v8-utc">
+                                        <rect key="frame" x="35" y="8" width="155" height="31"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ng0-A5-Xhx" secondAttribute="bottom" constant="8" id="JQ3-0V-IQK"/>
+                                    <constraint firstItem="qk1-yt-5UE" firstAttribute="top" secondItem="94o-wQ-4uw" secondAttribute="top" constant="8" id="P5f-09-Zek"/>
+                                    <constraint firstItem="qk1-yt-5UE" firstAttribute="leading" secondItem="94o-wQ-4uw" secondAttribute="leading" constant="12" id="Uhu-bN-uom"/>
+                                    <constraint firstAttribute="trailing" secondItem="ng0-A5-Xhx" secondAttribute="trailing" constant="12" id="WJq-Qw-3uE"/>
+                                    <constraint firstItem="ng0-A5-Xhx" firstAttribute="top" secondItem="94o-wQ-4uw" secondAttribute="top" constant="8" id="XdB-wN-VsU"/>
+                                    <constraint firstItem="P7a-v8-utc" firstAttribute="top" secondItem="94o-wQ-4uw" secondAttribute="top" constant="8" id="bZ1-Z5-J1C"/>
+                                    <constraint firstAttribute="bottom" secondItem="qk1-yt-5UE" secondAttribute="bottom" constant="8" id="iZS-k4-eDr"/>
+                                    <constraint firstItem="P7a-v8-utc" firstAttribute="leading" secondItem="qk1-yt-5UE" secondAttribute="trailing" constant="12" id="qOb-YS-Ona"/>
+                                    <constraint firstItem="ng0-A5-Xhx" firstAttribute="leading" secondItem="P7a-v8-utc" secondAttribute="trailing" constant="24" id="sjP-uN-C1i"/>
+                                    <constraint firstAttribute="bottom" secondItem="P7a-v8-utc" secondAttribute="bottom" constant="8" id="zZZ-OH-izT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kjV-4l-m3x" firstAttribute="top" secondItem="SwC-C0-t9Y" secondAttribute="bottom" constant="100" id="23g-xR-8qq"/>
+                            <constraint firstItem="Vnc-kj-jpg" firstAttribute="trailing" secondItem="SwC-C0-t9Y" secondAttribute="trailing" constant="12" id="BlB-Oa-r0R"/>
+                            <constraint firstItem="Vnc-kj-jpg" firstAttribute="trailing" secondItem="kjV-4l-m3x" secondAttribute="trailing" constant="12" id="I0g-QR-eXG"/>
+                            <constraint firstItem="SwC-C0-t9Y" firstAttribute="leading" secondItem="Vnc-kj-jpg" secondAttribute="leading" constant="12" id="Whg-cy-EgU"/>
+                            <constraint firstItem="SwC-C0-t9Y" firstAttribute="top" secondItem="Vnc-kj-jpg" secondAttribute="top" constant="100" id="d7s-K7-rZZ"/>
+                            <constraint firstItem="94o-wQ-4uw" firstAttribute="top" secondItem="kjV-4l-m3x" secondAttribute="bottom" constant="24" id="hgY-zu-Ruj"/>
+                            <constraint firstItem="kjV-4l-m3x" firstAttribute="leading" secondItem="Vnc-kj-jpg" secondAttribute="leading" constant="12" id="jPS-oU-aOn"/>
+                            <constraint firstItem="94o-wQ-4uw" firstAttribute="leading" secondItem="Vnc-kj-jpg" secondAttribute="leading" constant="12" id="ouf-eo-h8k"/>
+                            <constraint firstItem="Vnc-kj-jpg" firstAttribute="trailing" secondItem="94o-wQ-4uw" secondAttribute="trailing" constant="12" id="rEd-af-AXY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vnc-kj-jpg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbT-dF-Mo4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3692" y="795.6521739130435"/>
         </scene>
         <!--Partners View Controller-->
         <scene sceneID="2Id-b4-deL">
@@ -1173,7 +1336,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                                                     <outlet property="delegate" destination="zG5-Hj-gb8" id="sHn-6L-0Uo"/>
                                                 </connections>
                                             </collectionView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No info" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vdT-3h-1mU">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="-" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vdT-3h-1mU">
                                                 <rect key="frame" x="4" y="192" width="366" height="474"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1238,11 +1401,11 @@ Cтартап Neobis был основан в 2016 году двумя деву�
             <objects>
                 <viewController storyboardIdentifier="ContestFormsViewController" id="Hu5-Su-MFJ" customClass="ContestFormsViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3FP-al-gYX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LI-CP-9dE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO" suppressesIncrementalRendering="YES">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -1273,7 +1436,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oAM-9J-mid" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WWR-gu-YYp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1290,17 +1453,17 @@ Cтартап Neobis был основан в 2016 году двумя деву�
             <objects>
                 <viewController storyboardIdentifier="InitialViewController" id="Y7S-nZ-oKT" customClass="InitialViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CLO-dO-vC4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для того чтобы продолжить, пожалуйста пройдите регистрацию:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XML-VH-pwA">
-                                <rect key="frame" x="16" y="399.5" width="343" height="40"/>
+                                <rect key="frame" x="16" y="439.5" width="288" height="60"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                 <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4z-YH-eDE">
-                                <rect key="frame" x="16" y="447.5" width="343" height="50"/>
+                                <rect key="frame" x="16" y="507.5" width="288" height="50"/>
                                 <color key="backgroundColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="y9R-e6-ARl"/>
@@ -1313,14 +1476,14 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро Пожаловать на Ярмарку Карьеры " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="063-5f-fvG">
-                                <rect key="frame" x="16" y="105" width="351" height="56.5"/>
+                                <rect key="frame" x="16" y="105" width="296" height="56.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
                                 <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISd-Ag-sD1">
-                                <rect key="frame" x="16" y="180" width="343" height="199.5"/>
-                                <mutableString key="text">Это площадка, где студенты и выпускники вузов могут встретиться и побеседовать с крупнейшими работодателями Кыргызстана. Представители ведущих отечественных и международных компаний и университетов расскажут студентам о возможностях трудоустройства, о магистерских и стипендиальных международных программах.</mutableString>
+                                <rect key="frame" x="16" y="180" width="288" height="239.5"/>
+                                <string key="text">Это площадка, где студенты и выпускники вузов могут встретиться и побеседовать с крупнейшими работодателями Кыргызстана. Представители ведущих отечественных и международных компаний и университетов расскажут студентам о возможностях трудоустройства, о магистерских и стипендиальных международных программах.</string>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <color key="textColor" red="0.16316631436347961" green="0.25645458698272705" blue="0.41924053430557251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1355,7 +1518,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="82t-Qb-cjI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fPT-g5-06S">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1373,7 +1536,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tf2-5E-8cw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OmA-PA-qRz">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1388,8 +1551,8 @@ Cтартап Neobis был основан в 2016 году двумя деву�
     </scenes>
     <resources>
         <image name="arrow" width="14" height="24"/>
-        <image name="career-fair-logo" width="362" height="198"/>
         <image name="floor1" width="1233" height="1152"/>
+        <image name="intro_logo" width="595" height="595"/>
         <image name="test-image" width="76" height="38"/>
     </resources>
 </document>

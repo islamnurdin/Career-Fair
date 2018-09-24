@@ -49,15 +49,15 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = MainMenu.menu[indexPath.row]
-        if vc.identifier == "ContestFormsViewController" {
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "ContestFormsViewController") as! ContestFormsViewController
-            vc.urlString = "https://docs.google.com/forms/d/e/1FAIpQLSc53FQw9K7GsNWDPByPvrG3WXxQDNHJCJJAXW-oSKA5bw6v1Q/viewform"
-            navigationController?.pushViewController(vc, animated: true)
-        } else {
+            let vc = MainMenu.menu[indexPath.row]
+//        if vc.identifier == "ContestFormsViewController" {
+//            let sb = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = sb.instantiateViewController(withIdentifier: "ContestFormsViewController") as! ContestFormsViewController
+//            vc.urlString = "https://docs.google.com/forms/d/e/1FAIpQLSc53FQw9K7GsNWDPByPvrG3WXxQDNHJCJJAXW-oSKA5bw6v1Q/viewform"
+//            navigationController?.pushViewController(vc, animated: true)
+//        } else {
             presentViewController(vc: vc.identifier, sb: vc.storyboard)
-        }
+//        }
 
     }
     

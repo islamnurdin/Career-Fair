@@ -48,6 +48,7 @@
 		8484A8BF21426EA100AA5086 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */; };
 		8497E918213E9645002925E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497E917213E9645002925E4 /* Main.storyboard */; };
 		84BFAFAC214639A8006BC533 /* EmployerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */; };
+		84F5FB9B2158F89F00ABDBD5 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5FB9A2158F89F00ABDBD5 /* SurveyViewController.swift */; };
 		891443105578A84B90343DC7 /* Pods_Career_Fair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5E342D7D4307CEA78C82D /* Pods_Career_Fair.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		8484A8BE21426EA100AA5086 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		8497E917213E9645002925E4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84BFAFAB214639A8006BC533 /* EmployerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerDetailsVC.swift; sourceTree = "<group>"; };
+		84F5FB9A2158F89F00ABDBD5 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		F340DE6682C7BDC7B08C5A19 /* Pods-Career Fair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Career Fair.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Career Fair/Pods-Career Fair.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +171,7 @@
 				84771F18214F6F8000AA37FC /* Organizators */,
 				84771F1B214F700400AA37FC /* Partners */,
 				526C082B2141AA360081A637 /* AboutViewController.swift */,
+				84F5FB9A2158F89F00ABDBD5 /* SurveyViewController.swift */,
 			);
 			path = "Menu Files";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				526C08012139335D0081A637 /* Frameworks */,
 				526C08022139335D0081A637 /* Resources */,
 				04FBF2BE9B4D0F4AB26DB5C0 /* [CP] Embed Pods Frameworks */,
+				ACE9AEB73038DD77E94B6801 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,6 +414,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ACE9AEB73038DD77E94B6801 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Career Fair/Pods-Career Fair-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -446,6 +465,7 @@
 				526C08332141B6240081A637 /* OrgCollectionViewCell.swift in Sources */,
 				8441A253214BF07200173CB1 /* MapViewController.swift in Sources */,
 				84771F1D214F701900AA37FC /* PartnersCollectionViewCell.swift in Sources */,
+				84F5FB9B2158F89F00ABDBD5 /* SurveyViewController.swift in Sources */,
 				84BFAFAC214639A8006BC533 /* EmployerDetailsVC.swift in Sources */,
 				526C0808213933630081A637 /* AppDelegate.swift in Sources */,
 				527B52CE214D772100254DF2 /* Schedule.swift in Sources */,

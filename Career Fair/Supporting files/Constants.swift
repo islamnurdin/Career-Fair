@@ -23,14 +23,14 @@ struct MainMenu {
         var identifier: String
     }
     
-    static let menu = [ViewController(title: "Расписания", storyboard: "Main", identifier: "ScheduleViewController"),
+    static let menu = [ViewController(title: "Расписание", storyboard: "Main", identifier: "ScheduleViewController"),
                        ViewController(title: "Карта", storyboard: "Main", identifier: "MapViewController"),
                        ViewController(title: "Работодатели", storyboard: "Main", identifier: "EmployersViewController"),
                        ViewController(title: "Конкурсы", storyboard: "Main", identifier: "ContestsViewController"),
                        ViewController(title: "Организаторы", storyboard: "Main", identifier: "OrganizatorsViewController"),
                        ViewController(title: "Партнеры и Медиа-партнеры", storyboard: "Main", identifier: "PartnersViewController"),
                        ViewController(title: "Спонсоры", storyboard: "Main", identifier: "SponsorsViewController"),
-                       ViewController(title: "Опросы", storyboard: "Main", identifier: "ContestFormsViewController")]
+                       ViewController(title: "Опросы", storyboard: "Main", identifier: "SurveyViewController")]
 }
 
 struct MapMenu {

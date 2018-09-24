@@ -17,6 +17,7 @@ class ScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Расписание"
         getScheduleData {
             self.collView.reloadData()
         }
