@@ -30,7 +30,8 @@ struct MainMenu {
                        ViewController(title: "Организаторы", storyboard: "Main", identifier: "OrganizatorsViewController"),
                        ViewController(title: "Партнеры и Медиа-партнеры", storyboard: "Main", identifier: "PartnersViewController"),
                        ViewController(title: "Спонсоры", storyboard: "Main", identifier: "SponsorsViewController"),
-                       ViewController(title: "Опросы", storyboard: "Main", identifier: "SurveyViewController")]
+                       ViewController(title: "Опросы", storyboard: "Main", identifier: "SurveyViewController"),
+                       ViewController(title: "О приложении", storyboard: "Main", identifier: "AboutAppViewController")]
 }
 
 struct MapMenu {
