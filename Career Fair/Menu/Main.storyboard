@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tf2-5E-8cw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oAM-9J-mid">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,7 +45,6 @@
                                     <barButtonItem title="Done" width="402.66666666666663" id="r3k-Mg-aBH">
                                         <connections>
                                             <action selector="registered:" destination="8is-Qn-Sx8" id="Vzy-wc-RRz"/>
-                                            <segue destination="oAM-9J-mid" kind="show" id="pzs-X6-4n1"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="WEi-oM-uRr"/>
@@ -74,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LII-Bs-OLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="131.78410794602701"/>
+            <point key="canvasLocation" x="-732" y="117"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Lk3-TG-Vfd">
@@ -92,16 +91,16 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkb-CQ-e55">
-                                            <rect key="frame" x="72.5" y="11" width="231" height="48"/>
+                                            <rect key="frame" x="102" y="11" width="172.5" height="48"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О Ярмаркe Карьеры" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-dy-aNU">
-                                                    <rect key="frame" x="24" y="12" width="161" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-dy-aNU">
+                                                    <rect key="frame" x="24" y="12" width="102.5" height="24"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
                                                     <color key="textColor" red="0.99607843137254903" green="0.8784313725490196" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Vch-SN-Emt">
-                                                    <rect key="frame" x="193" y="12" width="14" height="24"/>
+                                                    <rect key="frame" x="134.5" y="12" width="14" height="24"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1307,106 +1306,6 @@ Cтартап Neobis был основан в 2016 году двумя деву�
             </objects>
             <point key="canvasLocation" x="680.79999999999995" y="131.78410794602701"/>
         </scene>
-        <!--Initial View Controller-->
-        <scene sceneID="zot-iM-dnn">
-            <objects>
-                <viewController storyboardIdentifier="InitialViewController" id="Y7S-nZ-oKT" customClass="InitialViewController" customModule="Career_Fair" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CLO-dO-vC4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для того чтобы продолжить, пожалуйста пройдите регистрацию:" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XML-VH-pwA">
-                                <rect key="frame" x="16" y="399.5" width="343" height="40"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
-                                <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4z-YH-eDE">
-                                <rect key="frame" x="16" y="447.5" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="y9R-e6-ARl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="21"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Зарегистрироваться"/>
-                                <connections>
-                                    <segue destination="82t-Qb-cjI" kind="show" id="7kM-Sx-iFc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро Пожаловать на Ярмарку Карьеры " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="063-5f-fvG">
-                                <rect key="frame" x="16" y="105" width="351" height="56.5"/>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
-                                <color key="textColor" red="0.12156862745098039" green="0.18823529411764706" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISd-Ag-sD1">
-                                <rect key="frame" x="16" y="180" width="343" height="199.5"/>
-                                <string key="text">Это площадка, где студенты и выпускники вузов могут встретиться и побеседовать с крупнейшими работодателями Кыргызстана. Представители ведущих отечественных и международных компаний и университетов расскажут студентам о возможностях трудоустройства, о магистерских и стипендиальных международных программах.</string>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
-                                <color key="textColor" red="0.16316631436347961" green="0.25645458698272705" blue="0.41924053430557251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="iYX-iE-Uvg" firstAttribute="trailing" secondItem="ISd-Ag-sD1" secondAttribute="trailing" constant="16" id="9J6-ZL-hyZ"/>
-                            <constraint firstItem="t4z-YH-eDE" firstAttribute="leading" secondItem="iYX-iE-Uvg" secondAttribute="leading" constant="16" id="Lgq-Xz-N2X"/>
-                            <constraint firstItem="iYX-iE-Uvg" firstAttribute="trailing" secondItem="063-5f-fvG" secondAttribute="trailing" constant="8" id="QJB-OH-JD9"/>
-                            <constraint firstItem="t4z-YH-eDE" firstAttribute="top" secondItem="XML-VH-pwA" secondAttribute="bottom" constant="8" id="R5F-Dt-FAo"/>
-                            <constraint firstItem="XML-VH-pwA" firstAttribute="top" secondItem="ISd-Ag-sD1" secondAttribute="bottom" constant="20" id="Si1-uH-5RA"/>
-                            <constraint firstItem="iYX-iE-Uvg" firstAttribute="trailing" secondItem="t4z-YH-eDE" secondAttribute="trailing" constant="16" id="ZeI-jN-mr6"/>
-                            <constraint firstItem="063-5f-fvG" firstAttribute="top" secondItem="iYX-iE-Uvg" secondAttribute="top" constant="41" id="ZnE-3C-pd3"/>
-                            <constraint firstItem="ISd-Ag-sD1" firstAttribute="leading" secondItem="iYX-iE-Uvg" secondAttribute="leading" constant="16" id="a1K-SQ-fE1"/>
-                            <constraint firstItem="XML-VH-pwA" firstAttribute="leading" secondItem="iYX-iE-Uvg" secondAttribute="leading" constant="16" id="pvS-Vc-omM"/>
-                            <constraint firstItem="ISd-Ag-sD1" firstAttribute="top" secondItem="063-5f-fvG" secondAttribute="bottom" constant="18.5" id="wMY-jQ-p0t"/>
-                            <constraint firstItem="iYX-iE-Uvg" firstAttribute="trailing" secondItem="XML-VH-pwA" secondAttribute="trailing" constant="16" id="yNn-wL-BLi"/>
-                            <constraint firstItem="063-5f-fvG" firstAttribute="leading" secondItem="iYX-iE-Uvg" secondAttribute="leading" constant="16" id="zFm-fC-Qum"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="iYX-iE-Uvg"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="TbV-qB-5El"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8nl-76-Pqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1872.8" y="131.78410794602701"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jh5-se-M10">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="82t-Qb-cjI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fPT-g5-06S">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="8is-Qn-Sx8" kind="relationship" relationship="rootViewController" id="CrS-2C-zoe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AUB-y1-LHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1108" y="131.78410794602701"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EtQ-G6-OFZ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tf2-5E-8cw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OmA-PA-qRz">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Y7S-nZ-oKT" kind="relationship" relationship="rootViewController" id="kpm-eC-nPY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f2o-yf-rQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2639" y="132"/>
-        </scene>
         <!--Organizators View Controller-->
         <scene sceneID="jVg-N3-rgf">
             <objects>
@@ -1486,7 +1385,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTX-5e-Qrj">
                                         <rect key="frame" x="24" y="144" width="327" height="649.5"/>
-                                        <mutableString key="text">Мобильное приложение для  ежегодной специализированной выставки «Ярмарка карьеры – 2018 в г. Бишкек, Кыргызстан. 
+                                        <string key="text">Мобильное приложение для  ежегодной специализированной выставки «Ярмарка карьеры – 2018 в г. Бишкек, Кыргызстан. 
 
 Что такое «Ярмарка карьеры»
 
@@ -1494,12 +1393,12 @@ Cтартап Neobis был основан в 2016 году двумя деву�
 
 Здесь же гости встретятся с признанными профессионалами своего дела и из первых уст узнают о том, как эффективно искать работу и добиваться успеха в компаниях мирового уровня.
 
-В приложении вы сможете найти всю необходимую информацию относительно ярмарки - расписание, новости, список партнеров и спонсоров, карту университета и более подробную информацию.</mutableString>
+В приложении вы сможете найти всю необходимую информацию относительно ярмарки - расписание, новости, список партнеров и спонсоров, карту университета и более подробную информацию.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Developed by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-DM-Vg7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Developed by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-DM-Vg7">
                                         <rect key="frame" x="100" y="835.5" width="88.5" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.49376991149999999" green="0.51034610859999996" blue="0.52845415610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1519,8 +1418,8 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="neobis_logo" translatesAutoresizingMaskIntoConstraints="NO" id="S8S-Js-9D0">
-                                        <rect key="frame" x="193" y="824.5" width="79" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" image="neobis_logo" translatesAutoresizingMaskIntoConstraints="NO" id="S8S-Js-9D0">
+                                        <rect key="frame" x="193" y="826.5" width="79" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="PPs-zU-7bi"/>
                                         </constraints>
@@ -1582,7 +1481,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyx-cj-T19">
                                                 <rect key="frame" x="8" y="224" width="359" height="415"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Учебный центр DevCIT совместно с Neobis Clubs и мобильным оператором О! проводит Хакатон в рамках фестиваля Ярмарка Карьеры.
+                                                <string key="text">Учебный центр DevCIT совместно с Neobis Clubs и мобильным оператором О! проводит Хакатон в рамках фестиваля Ярмарка Карьеры.
 28 сентября мы приглашаем разработчиков, IT-ишников и дизайнеров пользовательских интерфейсов к участию в 24-х часовом хакатоне. Будет отличная возможность познакомиться с ведущими разработчиками компаний, поработать с менторами, решить реальные задачи для этого продвинутого сектора рынка, и ещё это возможность показать себя потенциальным заказчикам и работодателям. Мобильный оператор О! предложит стажировку или даже сделает job offer тем участникам, кто проявит себя наиболее ярко. 
 Конечно, мы подготовили призы. 
 
@@ -1594,7 +1493,7 @@ Cтартап Neobis был основан в 2016 году двумя деву�
 Будет интересно! 
 До встречи!
 
-Ссылка на регистрацию: https://goo.gl/forms/lFxJloYlzwzz96vl1</mutableString>
+Ссылка на регистрацию: https://goo.gl/forms/lFxJloYlzwzz96vl1</string>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -1637,14 +1536,14 @@ Cтартап Neobis был основан в 2016 году двумя деву�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODj-jP-GI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5341.6000000000004" y="786.65667166416802"/>
+            <point key="canvasLocation" x="5159" y="890"/>
         </scene>
     </scenes>
     <resources>
         <image name="Career_Services_Logo" width="396" height="308"/>
         <image name="arrow" width="14" height="24"/>
         <image name="auca_logo" width="568" height="660"/>
-        <image name="floor1" width="1233" height="1152"/>
+        <image name="floor1" width="822" height="942"/>
         <image name="hack_logo" width="1672" height="872"/>
         <image name="intro_logo" width="595" height="595"/>
         <image name="neobis_logo" width="1800" height="590"/>

@@ -21,7 +21,6 @@ class ScheduleViewController: UIViewController {
         getScheduleData {
             self.collView.reloadData()
         }
-
     }
 
     func getScheduleData(completed: @escaping () -> ()) {

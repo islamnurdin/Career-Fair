@@ -17,31 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         setupNavigationBar()
-        
-        
-        let defaults = UserDefaults.standard
-        if defaults.object(forKey: "saw") == nil {
-            defaults.set("Yes", forKey:"saw")
-            defaults.synchronize()
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "InitialViewController") as! InitialViewController
-            self.window?.rootViewController? = viewController
-            self.window?.makeKeyAndVisible()
-        } else {
-            let nc = self.window?.rootViewController as? UINavigationController
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = sb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-            nc?.pushViewController(viewController, animated: false)
-            viewController.navigationItem.hidesBackButton = true
-        }
-        
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        let firstVC = sb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//        if let navigationController = self.window?.rootViewController as? UINavigationController
-//        {
-//            navigationController.pushViewController(firstVC, animated: true)
-//            firstVC.deleteBackButtonTitle()
-//        }
+
         return true
        
     }
