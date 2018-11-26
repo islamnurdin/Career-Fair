@@ -28,4 +28,12 @@ class SurveyViewController: UIViewController {
         vc.urlString = "https://docs.google.com/forms/d/1oUAC3HWO73MbhE0-YLgMYm7co4i_8HC6GehZlqIuDLE/viewform?edit_requested=true"
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func aboutFairSurvey(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ContestFormsViewController") as! ContestFormsViewController
+        vc.urlString = "https://docs.google.com/forms/d/1_1-cPUHE8_nA6MxcjjhDY6_6nGEQboaGhycYtc9N1q8/viewform?edit_requested=true"
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
